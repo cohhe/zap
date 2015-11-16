@@ -1,4 +1,4 @@
-Zap, Copyright 2015 Cohhe
+Zap, Copyright 2015 Cohhe https://cohhe.com/
 Zap is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
