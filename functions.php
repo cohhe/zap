@@ -224,9 +224,9 @@ function zap_prev_next_links() {
 		if (!empty( $prev_post )) {
 			$output .= '
 			<div class="nav_button left">
-				<span class="prev-post-text icon-left">'. __('Previous post', 'zap').'</span>
+				<span class="prev-post-text">'. __('Previous post', 'zap').'</span>
 				<div class="prev-post-link">
-					<a href="'. get_permalink( $prev_post->ID ).'" class="prev_blog_post">'.get_the_title( $prev_post->ID ).'</a>
+					<a href="'. get_permalink( $prev_post->ID ).'" class="prev_blog_post icon-left">'.get_the_title( $prev_post->ID ).'</a>
 				</div>
 			</div>';
 		}
@@ -234,9 +234,9 @@ function zap_prev_next_links() {
 		if (!empty( $next_post )) {
 			$output .= '
 			<div class="nav_button right">
-				<span class="next-post-text icon-right">'.__('Next post', 'zap').'</span>
+				<span class="next-post-text">'.__('Next post', 'zap').'</span>
 				<div class="next-post-link">
-					<a href="'. get_permalink( $next_post->ID ).'" class="next_blog_post">'. get_the_title( $next_post->ID ).'</a>
+					<a href="'. get_permalink( $next_post->ID ).'" class="next_blog_post icon-right">'. get_the_title( $next_post->ID ).'</a>
 				</div>
 			</div>';
 		}
