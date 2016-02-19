@@ -17,7 +17,7 @@
 				<div class="site-info-content">
 					<?php $footer_logo = get_theme_mod('zap_footerlogo', array());
 						if ( !empty($footer_logo) ) { ?>
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo" rel="home"><img src="<?php echo $footer_logo; ?>" alt="Footer logo"></a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo" rel="home"><img src="<?php echo $footer_logo; ?>" alt="<?php _e('Footer logo', 'zap'); ?>"></a>
 						<?php } ?>
 					<div class="footer-menu-wrapper">
 						<?php

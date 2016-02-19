@@ -4,7 +4,7 @@ Theme URI: https://cohhe.com/project-view/zap/
 Author: Cohhe
 Author URI: https://cohhe.com/
 Description: Enhance your story experience, by leveraging the power of Zap Wordpress Theme, built especially for telling great stories. It is the only free WordPress theme fully compatible with the Aesop Story Engine.
-Version: 1.0.0
+Version: 1.1
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, sticky-post, theme-options, translation-ready
@@ -1095,6 +1095,26 @@ body .site-header.scrolled {
 
 .container.wide-container .row.about-company-lower {
 	margin-top: -110px;
+}
+
+.container.wide-container.no-padding {
+	padding: 0;
+}
+
+.container.wide-container.no-padding-bottom {
+	padding-bottom: 0;
+}
+
+.container.wide-container.no-padding-top {
+	padding-top: 0;
+}
+
+.container.wide-container.no-padding-left {
+	padding-left: 0;
+}
+
+.container.wide-container.no-padding-right {
+	padding-right: 0;
 }
 
 .about-company-lower p {
@@ -5395,3 +5415,5 @@ article .entry-content table tr:nth-child(even) {
 .icon-file-audio:before { content: '\e81c'; } /* '' */
 .icon-quote-left-1:before { content: '\e81d'; } /* '' */
 .icon-link:before { content: '\e81e'; } /* '' */
+.icon-calendar:before { content: '\e81f'; } /* '' */
+.icon-comment-empty:before { content: '\e820'; } /* '' */

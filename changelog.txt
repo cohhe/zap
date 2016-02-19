@@ -1,4 +1,10 @@
 Zap changelog
 
+= Version 1.1 =
+* Fixed image alt attributes
+* Excluded HTML of translatable strings
+* Unminified JS
+* Prefixed sidebar registration
+
 = Version 1.0 =
 * Initial release

@@ -68,7 +68,7 @@ switch ($layout_type) {
 
 $zap_layout_type = $layout_type;
 
-if ( ( is_active_sidebar( 'sidebar-1' ) || is_active_sidebar( 'sidebar-2' ) ) && LONGFORM_LAYOUT != 'sidebar-no' ) {
+if ( ( is_active_sidebar( 'zap-sidebar-1' ) || is_active_sidebar( 'zap-sidebar-2' ) ) && LONGFORM_LAYOUT != 'sidebar-no' ) {
 	$zap_site_width = 'col-sm-9 col-md-9 col-lg-9';
 }
 
@@ -85,7 +85,7 @@ if ( ( is_active_sidebar( 'sidebar-1' ) || is_active_sidebar( 'sidebar-2' ) ) &&
 				<div class="site-title">
 					<?php
 					if ( ! empty ( $logo ) ) { ?>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo $logo; ?>" alt="Logo"></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo $logo; ?>" alt="<?php _e("Logo", "zap"); ?>"></a>
 						<?php
 					} else { ?>
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="site-title"><?php bloginfo( 'name' ); ?></a>

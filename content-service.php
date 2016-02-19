@@ -27,12 +27,12 @@ if ( !is_single() ) {
 				<?php
 					$img = wp_get_attachment_image_src( get_post_thumbnail_id(), 'zap-medium-thumbnail' );
 					if ( !empty($img) ) {
-						echo '<img src="'.$img['0'].'" class="single-service-image" alt="Service image">';
+						echo '<img src="'.$img['0'].'" class="single-service-image" alt="'.__('Service image', 'zap').'">';
 					}
 					echo '<h2 class="single-service-title">'.get_the_title().'</h2>';
 				?>
 			</div>
-			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'zap' ) ); ?>
+			<?php the_content( __( 'Continue reading', 'zap' ).' '.'<span class="meta-nav">&rarr;</span>' ); ?>
 		</div>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

@@ -103,6 +103,12 @@
       "src": "fontawesome"
     },
     {
+      "uid": "9c1376672bb4f1ed616fdd78a23667e9",
+      "css": "comment-empty",
+      "code": 59424,
+      "src": "fontawesome"
+    },
+    {
       "uid": "c76b7947c957c9b78b11741173c8349b",
       "css": "attention-1",
       "code": 59394,
@@ -142,6 +148,12 @@
       "uid": "9f7e588c66cfd6891f6f507cf6f6596b",
       "css": "phone-1",
       "code": 37,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "531bc468eecbb8867d822f1c11f1e039",
+      "css": "calendar",
+      "code": 59423,
       "src": "fontawesome"
     },
     {

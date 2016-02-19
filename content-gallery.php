@@ -25,7 +25,7 @@ if ( !is_single() ) {
 				$img = wp_get_attachment_image_src( get_post_thumbnail_id(), 'zap-medium-thumbnail' );
 				echo '<div class="single-image-container">';
 				if ( !empty($img) ) {
-					echo '<img src="'.$img['0'].'" class="single-post-image" alt="Post with image">';
+					echo '<img src="'.$img['0'].'" class="single-post-image" alt="'.__('Post with image', 'zap').'">';
 				} else {
 					echo '<span class="post-no-image"></span>';
 				}
@@ -44,7 +44,7 @@ if ( !is_single() ) {
 				$img = wp_get_attachment_image_src( get_post_thumbnail_id(), 'zap-full-width' );
 				echo '<div class="single-post-image-container">';
 				if ( !empty($img) ) {
-					echo '<img src="'.$img['0'].'" class="single-post-image" alt="Post with image">';
+					echo '<img src="'.$img['0'].'" class="single-post-image" alt="'.__('Post with image', 'zap').'">';
 				}
 				echo '<div class="single-post-meta">';
 					zap_posted_on();
@@ -75,7 +75,7 @@ if ( !is_single() ) {
 	<?php else : ?>
 	<div class="entry-content">
 		<div id="entry-content-wrapper">
-			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'zap' ) ); ?>
+			<?php the_content( __( 'Continue reading', 'zap' ).' '.'<span class="meta-nav">&rarr;</span>' ); ?>
 			<div class="single-post-bottom-meta">
 			<?php
 				zap_tag_list();

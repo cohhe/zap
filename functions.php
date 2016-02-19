@@ -318,7 +318,7 @@ function zap_has_featured_posts() {
 function zap_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Post Sidebar', 'zap' ),
-		'id'            => 'sidebar-1',
+		'id'            => 'zap-sidebar-1',
 		'class'			=> 'col-sm-4 col-md-4 col-lg-4',
 		'description'   => __( 'Additional sidebar that appears on the right or left.', 'zap' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -328,7 +328,7 @@ function zap_widgets_init() {
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Content Sidebar', 'zap' ),
-		'id'            => 'sidebar-2',
+		'id'            => 'zap-sidebar-2',
 		'class'			=> 'col-sm-4 col-md-4 col-lg-4',
 		'description'   => __( 'Additional sidebar that appears on the right or left.', 'zap' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -338,7 +338,7 @@ function zap_widgets_init() {
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Footer Widget Area 1', 'zap' ),
-		'id'            => 'sidebar-3',
+		'id'            => 'zap-sidebar-3',
 		'description'   => __( 'Appears in the footer section of the site.', 'zap' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -347,7 +347,7 @@ function zap_widgets_init() {
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Footer Widget Area 2', 'zap' ),
-		'id'            => 'sidebar-4',
+		'id'            => 'zap-sidebar-4',
 		'description'   => __( 'Appears in the footer section of the site.', 'zap' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -356,7 +356,7 @@ function zap_widgets_init() {
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Footer Widget Area 3', 'zap' ),
-		'id'            => 'sidebar-5',
+		'id'            => 'zap-sidebar-5',
 		'description'   => __( 'Appears in the footer section of the site.', 'zap' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -655,7 +655,7 @@ function zap_body_classes( $classes ) {
 		$classes[] = 'list-view';
 	}
 
-	if ( is_active_sidebar( 'sidebar-3' ) ) {
+	if ( is_active_sidebar( 'zap-sidebar-3' ) ) {
 		$classes[] = 'footer-widgets';
 	}
 
@@ -717,7 +717,7 @@ function zap_the_related_posts() {
 								if ( has_post_thumbnail() ) {
 									the_post_thumbnail('zap-related-thumbnail');
 								} else {
-									echo '<img src="'.get_template_directory_uri().'/images/no-post-img.png" class="related-post-image" alt="Post without image">';
+									echo '<img src="'.get_template_directory_uri().'/images/no-post-img.png" class="related-post-image" alt="'.__('Post without image', 'zap').'">';
 								}
 								?>
 								<span class="single-open-post-date"><?php echo human_time_diff(get_the_time('U',get_the_ID()),current_time('timestamp')) .  ' '.__('ago', 'zap'); ?></span>
