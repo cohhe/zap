@@ -94,7 +94,6 @@ if ( !is_single() ) {
 				'link_before' => '<span>',
 				'link_after'  => '</span>',
 			) );
-			// edit_post_link( __( 'Edit', 'zap' ), '<span class="edit-link">', '</span>' );
 		?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>

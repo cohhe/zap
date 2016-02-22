@@ -38,8 +38,6 @@ global $zap_site_width, $zap_layout_type;
 
 					?><div class="clearfix"></div><?php
 
-					// the_tags( '<footer class="entry-meta"><span class="tag-links">', '', '</span></footer>' );
-
 					if ( get_the_author_meta( 'description' ) ) :
 						get_template_part( 'author-bio' );
 					endif;

@@ -314,12 +314,6 @@ function scrollPageToTop(){
 	jQuery('body').css('height', 'auto');
 	jQuery("html, body").animate({ scrollTop: 0 }, "slow");
 
-	// if( zap.device != 'desktop' ){
-		// jQuery('body').scrollTop(0);
-	// }else{
-	// 	jQuery('.content-wrapper').scrollTop(0);
-	// }
-
 	jQuery('body').css('height', '');
 }
 
@@ -371,10 +365,6 @@ function scrollPageToTop(){
 	}
 
 	function wheel(e) {
-		// for IE 
-		//if( ie ) {
-			//preventDefault(e);
-		//}
 	}
 
 	function disable_scroll() {

@@ -112,10 +112,6 @@ function zap_posted_on( $post_id = '' ) {
 		$post = get_post( $post_id );
 	}
 
-	// if ( is_sticky() && is_home() && ! is_paged() ) {
-	// 	echo '<span class="sticky-featured-post">' . __( 'Sticky', 'zap' ) . '</span>';
-	// }
-
 	// Set up and print post meta information.
 	printf( '<span class="byline"><span class="author vcard"><a class="url fn n icon-user" href="%4$s" rel="author">%5$s</a></span></span>',
 		esc_url( get_permalink() ),

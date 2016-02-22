@@ -460,8 +460,6 @@ function zap_breadcrumbs() {
 			if ( isset($cat[0]) ) {
 				$cat = $cat[0];
 			}
-
-			//$output .= get_category_parents($cat, TRUE, ' ' . $delimiter . ' ');
 			$output .= '<a href="' . get_permalink($parent) . '">' . $parent->post_title . '</a> ' . $delimiter . ' ';
 			$output .= $before . get_the_title() . $after;
 		} elseif (is_page() && !$post->post_parent) {
