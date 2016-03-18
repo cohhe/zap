@@ -17,7 +17,7 @@
 				<div class="site-info-content">
 					<?php $footer_logo = get_theme_mod('zap_footerlogo', array());
 						if ( !empty($footer_logo) ) { ?>
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo" rel="home"><img src="<?php echo $footer_logo; ?>" alt="<?php _e('Footer logo', 'zap'); ?>"></a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo" rel="home"><img src="<?php echo esc_url($footer_logo); ?>" alt="<?php _e('Footer logo', 'zap'); ?>"></a>
 						<?php } ?>
 					<div class="footer-menu-wrapper">
 						<?php
@@ -51,7 +51,7 @@
 			</div>
 			<div class="clearfix"></div>
 			<div class="copyright">
-				<?php echo get_theme_mod('zap_copyright', __('Copyright &copy; 2015 Zap', 'zap')); ?> 
+				© <?php echo date('Y') ?> <a href="https://cohhe.com">Cohhe Themes</a>. All rights reserved.
 			</div>
 			<div class="clearfix"></div>
 		</div>

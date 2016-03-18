@@ -22,7 +22,7 @@ global $zap_site_width, $zap_layout_type;
 	<?php if ( $zap_layout_type == 'left' ) {
 		get_sidebar( 'post' );
 	} ?>
-	<div id="primary" class="content-area <?php echo $zap_site_width; ?>">
+	<div id="primary" class="content-area <?php echo esc_attr($zap_site_width); ?>">
 		<div id="content" class="site-content" role="main">
 			<?php
 				// Start the Loop.

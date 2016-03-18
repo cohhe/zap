@@ -22,7 +22,7 @@ get_header();
 global $zap_site_width;
 ?>
 <div id="main-content" class="main-content row">
-	<section id="primary" class="content-area <?php echo $zap_site_width; ?>">
+	<section id="primary" class="content-area <?php echo esc_attr($zap_site_width); ?>">
 		<div id="content" class="site-content" role="main">
 
 			<?php if ( have_posts() ) : ?>

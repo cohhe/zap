@@ -24,19 +24,6 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<!--[if lt IE 9]>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
-	<![endif]-->
-	<?php
-		$favicon = get_theme_mod('zap_favicon', array());
-
-		if (!empty($favicon)) {
-			echo '<link rel="shortcut icon" href="' . esc_url( $favicon ) . '" />';
-		} else {
-			echo '<link rel="shortcut icon" href="' . get_template_directory_uri() . '/images/favicon.png" />';
-		}
-	?>
-	
 	<?php wp_head(); ?>
 </head>
 <?php
@@ -56,19 +43,19 @@ if ( is_archive() || is_search() || is_404() || is_home() ) {
 
 switch ($layout_type) {
 	case 'right':
-		define('LONGFORM_LAYOUT', 'sidebar-right');
+		define('ZAP_LAYOUT', 'sidebar-right');
 		break;
 	case 'full':
-		define('LONGFORM_LAYOUT', 'sidebar-no');
+		define('ZAP_LAYOUT', 'sidebar-no');
 		break;
 	case 'left':
-		define('LONGFORM_LAYOUT', 'sidebar-left');
+		define('ZAP_LAYOUT', 'sidebar-left');
 		break;
 }
 
 $zap_layout_type = $layout_type;
 
-if ( ( is_active_sidebar( 'zap-sidebar-1' ) || is_active_sidebar( 'zap-sidebar-2' ) ) && LONGFORM_LAYOUT != 'sidebar-no' ) {
+if ( ( is_active_sidebar( 'zap-sidebar-1' ) || is_active_sidebar( 'zap-sidebar-2' ) ) && ZAP_LAYOUT != 'sidebar-no' ) {
 	$zap_site_width = 'col-sm-9 col-md-9 col-lg-9';
 }
 
@@ -85,7 +72,7 @@ if ( ( is_active_sidebar( 'zap-sidebar-1' ) || is_active_sidebar( 'zap-sidebar-2
 				<div class="site-title">
 					<?php
 					if ( ! empty ( $logo ) ) { ?>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo $logo; ?>" alt="<?php _e("Logo", "zap"); ?>"></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_url($logo); ?>" alt="<?php _e("Logo", "zap"); ?>"></a>
 						<?php
 					} else { ?>
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="site-title"><?php bloginfo( 'name' ); ?></a>
@@ -112,13 +99,16 @@ if ( ( is_active_sidebar( 'zap-sidebar-1' ) || is_active_sidebar( 'zap-sidebar-2
 						?>
 					</nav>
 				</div>
-				<?php if ( get_theme_mod('zap_headeremail', '') || get_theme_mod('zap_headerphone', '') || zap_get_social_icons() ) { ?>
+				<?php
+				$header_email = get_theme_mod('zap_headeremail', '');
+				$header_phone = get_theme_mod('zap_headerphone', '');
+				if ( $header_email || $header_phone || zap_get_social_icons() ) { ?>
 					<div class="main-header-info col-xs-5 col-sm-5 col-md-5">
-						<?php if ( get_theme_mod('zap_headeremail', '') ) { ?>
-							<a href="mailto:<?php echo get_theme_mod('zap_headeremail', ''); ?>" class="header-email icon-at"><?php echo get_theme_mod('zap_headeremail', ''); ?></a>
+						<?php if ( $header_email ) { ?>
+							<a href="mailto:<?php echo esc_url($header_email); ?>" class="header-email icon-at"><?php echo esc_html($header_email); ?></a>
 						<?php } ?>
-						<?php if ( get_theme_mod('zap_headerphone', '') ) { ?>
-							<span class="header-phone icon-phone-1"><?php echo get_theme_mod('zap_headerphone', ''); ?></span>
+						<?php if ( $header_phone ) { ?>
+							<span class="header-phone icon-phone-1"><?php echo esc_html($header_phone); ?></span>
 						<?php } ?>
 						<?php
 						if ( zap_get_social_icons() ) {

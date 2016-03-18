@@ -123,14 +123,10 @@ endif; // zap_setup
 add_action( 'after_setup_theme', 'zap_setup' );
 
 // Admin CSS
-function vh_admin_css() {
-	wp_enqueue_style( 'vh-admin-css', get_template_directory_uri() . '/css/wp-admin.css' );
+function zap_admin_css() {
+	wp_enqueue_style( 'zap-admin-css', get_template_directory_uri() . '/css/wp-admin.css' );
 }
-add_action('admin_head','vh_admin_css');
-
-function zap_is_blog() {
-	return get_option('page_for_posts');
-}
+add_action('admin_head','zap_admin_css');
 
 function zap_get_social_icons() {
 	$facebook = get_theme_mod('zap_headerfacebook', '');
@@ -147,22 +143,22 @@ function zap_get_social_icons() {
 			<a href="javascript:void(0)" class="header-share icon-share"></a>
 			<div class="header-icon-wrapper">';
 				if ( $facebook != '' ) {
-					$output .= '<a href="' . $facebook . '" class="header-social ' . $class . $count . ' icon-facebook"></a>';
+					$output .= '<a href="' . esc_url($facebook) . '" class="header-social ' . $class . $count . ' icon-facebook"></a>';
 					$count++;
 				}
 
 				if ( $youtube != '' ) {
-					$output .= '<a href="' . $youtube . '" class="header-social ' . $class . $count . ' icon-youtube-play"></a>';
+					$output .= '<a href="' . esc_url($youtube) . '" class="header-social ' . $class . $count . ' icon-youtube-play"></a>';
 					$count++;
 				}
 
 				if ( $twitter != '' ) {
-					$output .= '<a href="' . $twitter . '" class="header-social ' . $class . $count . ' icon-twitter"></a>';
+					$output .= '<a href="' . esc_url($twitter) . '" class="header-social ' . $class . $count . ' icon-twitter"></a>';
 					$count++;
 				}
 
 				if ( $gplus != '' ) {
-					$output .= '<a href="' . $gplus . '" class="header-social ' . $class . $count . ' icon-gplus"></a>';
+					$output .= '<a href="' . esc_url($gplus) . '" class="header-social ' . $class . $count . ' icon-gplus"></a>';
 					$count++;
 				}
 			
@@ -200,20 +196,6 @@ function zap_category_list() {
 	}
 
 	echo $entry_utility;
-}
-
-function zap_share_icons() {
-	$output = '<div class="single-open-post-share">
-	<span class="share-text">'.__('Share', 'zap').'</span>';
-	$output .= '<a href="http://www.facebook.com/sharer.php?u=' . get_permalink() . '" class="social-icon icon-facebook" target="_blank"></a>';
-	$output .= '<a href="http://twitter.com/share?url=' . get_permalink() . '&amp;text=' . urlencode( get_the_title() ) . '" class="social-icon icon-twitter" target="_blank"></a>';
-	$output .= '<a href="https://www.linkedin.com/shareArticle?mini=true&url=' . urlencode( get_the_permalink() ) . '&title=' . urlencode( get_the_title() ) . '" class="single-share-linkedin icon-linkedin"></a>';
-	$output .= '<a href="http://tumblr.com/widgets/share/tool?canonicalUrl=' . urlencode( get_the_permalink() ) . '" class="single-share-tumblr icon-tumblr"></a>';
-	$output .= '<a href="https://plus.google.com/share?url=' . get_permalink() . '" class="social-icon icon-gplus" target="_blank"></a>';
-	$output .= "<a href=\"javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());\" class=\"social-icon icon-pinterest\" target=\"_blank\"></a>";
-	$output .= '</div>';
-
-	echo $output;
 }
 
 function zap_prev_next_links() {
@@ -265,48 +247,6 @@ function zap_content_width() {
 	}
 }
 add_action( 'template_redirect', 'zap_content_width' );
-
-/**
- * Prevent page scroll when clicking the More link
- *
- * @since Zap 1.0
- *
- * @return void
- */
-function remove_more_link_scroll( $link ) {
-	$link = preg_replace( '|#more-[0-9]+|', '', $link );
-	return $link;
-}
-add_filter( 'the_content_more_link', 'remove_more_link_scroll' );
-
-/**
- * Getter function for Featured Content Plugin.
- *
- * @since Zap 1.0
- *
- * @return array An array of WP_Post objects.
- */
-function zap_get_featured_posts() {
-	/**
-	 * Filter the featured posts to return in Zap 1.0.
-	 *
-	 * @since Zap 1.0
-	 *
-	 * @param array|bool $posts Array of featured posts, otherwise false.
-	 */
-	return apply_filters( 'zap_get_featured_posts', array() );
-}
-
-/**
- * A helper conditional function that returns a boolean value.
- *
- * @since Zap 1.0
- *
- * @return bool Whether there are featured posts.
- */
-function zap_has_featured_posts() {
-	return ! is_paged() && (bool) zap_get_featured_posts();
-}
 
 /**
  * Register three Zap 1.0 widget areas.
@@ -546,6 +486,10 @@ function zap_scripts() {
 	wp_enqueue_script( 'jquery-ui-draggable' );
 
 	wp_enqueue_script('googlemap', '//maps.googleapis.com/maps/api/js?sensor=false', array(), '3', false);
+
+	// Add html5
+	wp_enqueue_script( 'html5shiv', get_template_directory_uri() . '/js/html5.js' );
+	wp_script_add_data( 'html5shiv', 'conditional', 'lt IE 9' );
 }
 add_action( 'wp_enqueue_scripts', 'zap_scripts' );
 
@@ -661,9 +605,8 @@ function zap_body_classes( $classes ) {
 		$classes[] = 'singular';
 	}
 
-	$zap_layout = LONGFORM_LAYOUT;
-	if ( !empty($zap_layout) ) {
-		$classes[] = $zap_layout;
+	if ( defined('ZAP_LAYOUT') ) {
+		$classes[] = ZAP_LAYOUT;
 	}
 
 	if ( is_front_page() && 'slider' == get_theme_mod( 'featured_content_layout' ) ) {
