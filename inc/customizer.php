@@ -120,23 +120,6 @@ function zap_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Favicon
-	$wp_customize->add_section( 'zap_general_favicon', array(
-		'priority'       => 40,
-		'capability'     => 'edit_theme_options',
-		'title'          => __( 'Favicon' , 'zap'),
-		'description'    => __( 'Do you have favicon? You can upload it here.' , 'zap'),
-		'panel'          => 'zap_general_panel'
-	) );
-
-	$wp_customize->add_setting( 'zap_favicon', array( 'sanitize_callback' => 'esc_url_raw' ) );
-
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'zap_favicon', array(
-		'label'    => __( 'Favicon', 'zap' ),
-		'section'  => 'zap_general_favicon',
-		'settings' => 'zap_favicon',
-	) ) );
-
 	// Page layout
 	$wp_customize->add_section( 'zap_general_layout', array(
 		'priority'       => 50,

@@ -16,7 +16,7 @@ global $zap_site_width;
 		<h1 class="entry-title"><?php _e( 'Search', 'zap' ); ?></h1>
 		<?php echo zap_breadcrumbs(); ?>
 	</header><!-- .page-header -->
-	<section id="primary" class="content-area <?php echo $zap_site_width; ?>">
+	<section id="primary" class="content-area <?php echo esc_attr($zap_site_width); ?>">
 		<div id="content" class="site-content" role="main">
 
 			<?php if ( have_posts() ) : ?>

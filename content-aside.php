@@ -81,7 +81,7 @@ if ( !is_single() ) {
 			<div class="single-post-bottom-meta">
 			<?php
 				zap_tag_list();
-				zap_share_icons();
+				if ( function_exists('zap_share_icons') ) { zap_share_icons(); }
 			?>
 				<div class="clearfix"></div>
 			</div>

@@ -37,7 +37,7 @@ $sm_authot_description = get_the_author_meta( 'description', $sm_author_id );
 			<?php echo zap_breadcrumbs(); ?>
 		</div>
 	</header><!-- .archive-header -->
-	<section id="primary" class="content-area <?php echo $zap_site_width; ?>">
+	<section id="primary" class="content-area <?php echo esc_attr($zap_site_width); ?>">
 		<div id="content" class="site-content" role="main">
 
 			<?php if ( have_posts() ) : ?>

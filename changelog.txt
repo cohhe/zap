@@ -1,5 +1,13 @@
 Zap changelog
 
+= Version 1.3 =
+* Fixed theme tags
+* Escaped some variables/settings
+* Enqueued html5.js the proper way
+* Used core favicon implementation
+* Prefixed functions
+* Removed "plugin territory" functions
+
 = Version 1.2 =
 * Removed commented code
 
