@@ -1,5 +1,13 @@
 Zap changelog
 
+= Version 1.4 =
+* Fixed max width for content images
+* Fixed non-printable characters
+* Fixed text domains
+* Moved social/share icons to plugin
+* Added breadcrumb translations
+* Updated TGM
+
 = Version 1.3 =
 * Fixed theme tags
 * Escaped some variables/settings

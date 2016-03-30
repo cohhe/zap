@@ -102,7 +102,7 @@ if ( ( is_active_sidebar( 'zap-sidebar-1' ) || is_active_sidebar( 'zap-sidebar-2
 				<?php
 				$header_email = get_theme_mod('zap_headeremail', '');
 				$header_phone = get_theme_mod('zap_headerphone', '');
-				if ( $header_email || $header_phone || zap_get_social_icons() ) { ?>
+				if ( $header_email || $header_phone || ( function_exists('zap_get_social_icons') && zap_get_social_icons() ) ) { ?>
 					<div class="main-header-info col-xs-5 col-sm-5 col-md-5">
 						<?php if ( $header_email ) { ?>
 							<a href="mailto:<?php echo esc_url($header_email); ?>" class="header-email icon-at"><?php echo esc_html($header_email); ?></a>
@@ -111,7 +111,7 @@ if ( ( is_active_sidebar( 'zap-sidebar-1' ) || is_active_sidebar( 'zap-sidebar-2
 							<span class="header-phone icon-phone-1"><?php echo esc_html($header_phone); ?></span>
 						<?php } ?>
 						<?php
-						if ( zap_get_social_icons() ) {
+						if ( function_exists('zap_get_social_icons') && zap_get_social_icons() ) {
 							echo zap_get_social_icons();
 						} ?>
 					</div>

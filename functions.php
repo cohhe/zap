@@ -56,7 +56,6 @@ if ( ! function_exists( 'zap_setup' ) ) :
 	 * @since Zap 1.0
 	 */
 	function zap_setup() {
-		require(get_template_directory() . '/inc/metaboxes/layouts.php');
 
 		/**
 		 * Required: include TGM.
@@ -127,46 +126,6 @@ function zap_admin_css() {
 	wp_enqueue_style( 'zap-admin-css', get_template_directory_uri() . '/css/wp-admin.css' );
 }
 add_action('admin_head','zap_admin_css');
-
-function zap_get_social_icons() {
-	$facebook = get_theme_mod('zap_headerfacebook', '');
-	$youtube = get_theme_mod('zap_headeryoutube', '');
-	$twitter = get_theme_mod('zap_headertwitter', '');
-	$gplus = get_theme_mod('zap_headergplus', '');
-	$output = '';
-	$count = 1;
-	$class = 'count-';
-
-	if ( $facebook != '' || $youtube != '' || $twitter != '' || $gplus != '' ) {
-		$output .= '
-		<div class="header-share-icons">
-			<a href="javascript:void(0)" class="header-share icon-share"></a>
-			<div class="header-icon-wrapper">';
-				if ( $facebook != '' ) {
-					$output .= '<a href="' . esc_url($facebook) . '" class="header-social ' . $class . $count . ' icon-facebook"></a>';
-					$count++;
-				}
-
-				if ( $youtube != '' ) {
-					$output .= '<a href="' . esc_url($youtube) . '" class="header-social ' . $class . $count . ' icon-youtube-play"></a>';
-					$count++;
-				}
-
-				if ( $twitter != '' ) {
-					$output .= '<a href="' . esc_url($twitter) . '" class="header-social ' . $class . $count . ' icon-twitter"></a>';
-					$count++;
-				}
-
-				if ( $gplus != '' ) {
-					$output .= '<a href="' . esc_url($gplus) . '" class="header-social ' . $class . $count . ' icon-gplus"></a>';
-					$count++;
-				}
-			
-		$output .= '<div class="clearfix"></div></div></div>';
-	}
-
-	return $output;
-}
 
 function zap_tag_list() {
 	$tags_list = get_the_tag_list( '', '' );
@@ -367,7 +326,7 @@ function zap_breadcrumbs() {
 			$parentCat = get_category($thisCat->parent);
 			if ($thisCat->parent != 0)
 				$output .= get_category_parents($parentCat, TRUE, ' ' . $delimiter . ' ');
-			$output .= $before . 'Archive by category "' . single_cat_title('', false) . '"' . $after;
+			$output .= $before . __('Archive by category', 'zap') . ' "' . single_cat_title('', false) . '"' . $after;
 		} elseif (is_day()) {
 			$output .= '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';
 			$output .= '<a href="' . get_month_link(get_the_time('Y'), get_the_time('m')) . '">' . get_the_time('F') . '</a> ' . $delimiter . ' ';
@@ -418,15 +377,15 @@ function zap_breadcrumbs() {
 			}
 			$output .= $before . get_the_title() . $after;
 		} elseif (is_search()) {
-			$output .= $before . 'Search results for "' . get_search_query() . '"' . $after;
+			$output .= $before . __('Search results for', 'zap') . ' "' . get_search_query() . '"' . $after;
 		} elseif (is_tag()) {
-			$output .= $before . 'Posts tagged "' . single_tag_title('', false) . '"' . $after;
+			$output .= $before . __('Posts tagged', 'zap') . ' "' . single_tag_title('', false) . '"' . $after;
 		} elseif (is_author()) {
 			global $vh_author;
 			$userdata = get_userdata($vh_author);
-			$output .= $before . 'Articles posted by ' . get_the_author() . $after;
+			$output .= $before . __('Articles posted by', 'zap') . ' ' . get_the_author() . $after;
 		} elseif (is_404()) {
-			$output .= $before . 'Error 404' . $after;
+			$output .= $before . __('Error 404', 'zap') . $after;
 		}
 
 		if (get_query_var('paged')) {
@@ -915,7 +874,7 @@ function vh_register_required_plugins() {
 			'name'     				=> 'Functionality for Zap theme', // The plugin name
 			'slug'     				=> 'functionality-for-zap-theme', // The plugin slug (typically the folder name)
 			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '1.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 				=> '1.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -959,8 +918,7 @@ function vh_register_required_plugins() {
 	$config = array(
 		'domain'       		=> 'zap',         	// Text domain - likely want to be the same as your theme.
 		'default_path' 		=> '',                         	// Default absolute path to pre-packaged plugins
-		'parent_menu_slug' 	=> 'themes.php', 				// Default parent menu slug
-		'parent_url_slug' 	=> 'themes.php', 				// Default parent URL slug
+		'parent_slug' 	    => 'themes.php', 				// Default parent menu slug
 		'menu'         		=> 'install-required-plugins', 	// Menu slug
 		'has_notices'      	=> true,                       	// Show admin notices or not
 		'is_automatic'    	=> true,					   	// Automatically activate plugins after installation or not

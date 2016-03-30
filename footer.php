@@ -51,7 +51,7 @@
 			</div>
 			<div class="clearfix"></div>
 			<div class="copyright">
-				© <?php echo date('Y') ?> <a href="https://cohhe.com">Cohhe Themes</a>. All rights reserved.
+				&copy; <?php echo date('Y') ?> <a href="https://cohhe.com">Cohhe Themes</a>. All rights reserved.
 			</div>
 			<div class="clearfix"></div>
 		</div>

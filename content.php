@@ -31,12 +31,7 @@ if ( !is_single() ) {
 				} else {
 					echo '<span class="post-no-image"></span>';
 				}
-				echo '<div class="single-post-share">
-					<a href="http://www.facebook.com/sharer.php?u=' . urlencode( get_the_permalink() ) . '" class="single-share-facebook icon-facebook"></a>
-					<a href="http://twitter.com/share?url=' . urlencode( get_the_permalink() ) . '&amp;text=' . urlencode( get_the_title() ) . '" class="single-share-twitter icon-twitter"></a>
-					<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=' . urlencode( get_the_permalink() ) . '&title=' . urlencode( get_the_title() ) . '" class="single-share-linkedin icon-linkedin"></a>
-					<a href="http://tumblr.com/widgets/share/tool?canonicalUrl=' . urlencode( get_the_permalink() ) . '" class="single-share-tumblr icon-tumblr"></a>
-				</div>';
+				if ( function_exists('zap_single_social_icons') ) { zap_single_social_icons(); }
 				echo '<span class="single-post-date icon-clock">'.human_time_diff(get_the_time('U',get_the_ID()),current_time('timestamp')) .  ' '.__('ago', 'zap').'</span>';
 				echo '</div>';
 				the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
