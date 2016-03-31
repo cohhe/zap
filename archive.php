@@ -22,32 +22,52 @@ get_header();
 global $zap_site_width;
 ?>
 <div id="main-content" class="main-content row">
+	<header class="entry-header">
+		<h1 class="entry-title">
+			<?php
+				if ( is_day() ) :
+					printf( __( 'Daily Archives: <span>%s</span>', 'zap' ), get_the_date() );
+
+				elseif ( is_month() ) :
+					printf( __( 'Monthly Archives: <span>%s</span>', 'zap' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'zap' ) ) );
+
+				elseif ( is_year() ) :
+					printf( __( 'Yearly Archives: <span>%s</span>', 'zap' ), get_the_date( _x( 'Y', 'yearly archives date format', 'zap' ) ) );
+
+				elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
+					_e( 'Asides', 'zap' );
+
+				elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
+					_e( 'Images', 'zap' );
+
+				elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
+					_e( 'Videos', 'zap' );
+
+				elseif ( is_tax( 'post_format', 'post-format-audio' ) ) :
+					_e( 'Audio', 'zap' );
+
+				elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
+					_e( 'Quotes', 'zap' );
+
+				elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
+					_e( 'Links', 'zap' );
+
+				elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
+					_e( 'Galleries', 'zap' );
+
+				else :
+					_e( 'Archives', 'zap' );
+
+				endif;
+			?>
+		</h1>
+		<?php echo zap_breadcrumbs(); ?>
+	</header><!-- .archive-header -->
 	<section id="primary" class="content-area <?php echo esc_attr($zap_site_width); ?>">
 		<div id="content" class="site-content" role="main">
 
-			<?php if ( have_posts() ) : ?>
+			<?php if ( have_posts() ) : 
 
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php
-						if ( is_day() ) :
-							printf( __( 'Daily Archives: <span>%s</span>', 'zap' ), get_the_date() );
-
-						elseif ( is_month() ) :
-							printf( __( 'Monthly Archives: <span>%s</span>', 'zap' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'zap' ) ) );
-
-						elseif ( is_year() ) :
-							printf( __( 'Yearly Archives: <span>%s</span>', 'zap' ), get_the_date( _x( 'Y', 'yearly archives date format', 'zap' ) ) );
-
-						else :
-							_e( 'Archives', 'zap' );
-
-						endif;
-					?>
-				</h1>
-			</header><!-- .page-header -->
-
-			<?php
 					// Start the Loop.
 					while ( have_posts() ) : the_post();
 

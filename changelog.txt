@@ -1,5 +1,9 @@
 Zap changelog
 
+= Version 1.5 =
+* Removed taxonomy template
+* Improved archive page template
+
 = Version 1.4 =
 * Fixed max width for content images
 * Fixed non-printable characters
