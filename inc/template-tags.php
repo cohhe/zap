@@ -84,10 +84,10 @@ function zap_post_nav() {
 		<div class="nav-links">
 			<?php
 			if ( is_attachment() ) :
-				previous_post_link( '%link', __( '<span class="meta-nav">Published In</span>%title', 'zap' ) );
+				previous_post_link( '%link', __( '<span class="meta-nav">Published In</span>%title', 'zap-lite' ) );
 			else :
-				previous_post_link( '%link', __( '<span class="glyphicon glyphicon-chevron-left"></span><span class="post-left">%title</span>', 'zap' ) );
-				next_post_link( '%link', __( '<span class="glyphicon glyphicon-chevron-right"></span><span class="post-right">%title</span>', 'zap' ) );
+				previous_post_link( '%link', __( '<span class="glyphicon glyphicon-chevron-left"></span><span class="post-left">%title</span>', 'zap-lite' ) );
+				next_post_link( '%link', __( '<span class="glyphicon glyphicon-chevron-right"></span><span class="post-right">%title</span>', 'zap-lite' ) );
 			endif;
 			?>
 		</div><!-- .nav-links -->

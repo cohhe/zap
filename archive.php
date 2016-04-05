@@ -26,37 +26,37 @@ global $zap_site_width;
 		<h1 class="entry-title">
 			<?php
 				if ( is_day() ) :
-					printf( __( 'Daily Archives: <span>%s</span>', 'zap' ), get_the_date() );
+					printf( __( 'Daily Archives: <span>%s</span>', 'zap-lite' ), get_the_date() );
 
 				elseif ( is_month() ) :
-					printf( __( 'Monthly Archives: <span>%s</span>', 'zap' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'zap' ) ) );
+					printf( __( 'Monthly Archives: <span>%s</span>', 'zap-lite' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'zap-lite' ) ) );
 
 				elseif ( is_year() ) :
-					printf( __( 'Yearly Archives: <span>%s</span>', 'zap' ), get_the_date( _x( 'Y', 'yearly archives date format', 'zap' ) ) );
+					printf( __( 'Yearly Archives: <span>%s</span>', 'zap-lite' ), get_the_date( _x( 'Y', 'yearly archives date format', 'zap-lite' ) ) );
 
 				elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
-					_e( 'Asides', 'zap' );
+					_e( 'Asides', 'zap-lite' );
 
 				elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
-					_e( 'Images', 'zap' );
+					_e( 'Images', 'zap-lite' );
 
 				elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
-					_e( 'Videos', 'zap' );
+					_e( 'Videos', 'zap-lite' );
 
 				elseif ( is_tax( 'post_format', 'post-format-audio' ) ) :
-					_e( 'Audio', 'zap' );
+					_e( 'Audio', 'zap-lite' );
 
 				elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
-					_e( 'Quotes', 'zap' );
+					_e( 'Quotes', 'zap-lite' );
 
 				elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
-					_e( 'Links', 'zap' );
+					_e( 'Links', 'zap-lite' );
 
 				elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
-					_e( 'Galleries', 'zap' );
+					_e( 'Galleries', 'zap-lite' );
 
 				else :
-					_e( 'Archives', 'zap' );
+					_e( 'Archives', 'zap-lite' );
 
 				endif;
 			?>

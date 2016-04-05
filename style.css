@@ -4,11 +4,11 @@ Theme URI: https://cohhe.com/project-view/zap-lite/
 Author: Cohhe
 Author URI: https://cohhe.com/
 Description: We can say with confidence that Zap Lite is the best free multipurpose WordPress theme. Designed to give a clean and fresh feel for your website, it puts most emphasis on the content.
-Version: 1.5
+Version: 1.6
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, sticky-post, theme-options, translation-ready
-Text Domain: zap 
+Text Domain: zap-lite
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -962,6 +962,10 @@ body .site-header.scrolled {
 }
 
 /* Slider */
+
+.home.blog.zap-main-slider .bx-wrapper {
+	margin-bottom: 30px;
+}
 
 .frontpage-slider-wrapper,
 .fp-slide-container,

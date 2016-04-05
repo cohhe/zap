@@ -17,7 +17,7 @@ global $zap_site_width;
 ?>
 <div id="main-content" class="main-content row">
 	<header class="entry-header">
-		<h1 class="entry-title"><?php printf( __( 'Tag Archives: <span>%s</span>', 'zap' ), single_tag_title( '', false ) ); ?></h1>
+		<h1 class="entry-title"><?php printf( __( 'Tag Archives: <span>%s</span>', 'zap-lite' ), single_tag_title( '', false ) ); ?></h1>
 		<?php echo zap_breadcrumbs(); ?>
 	</header><!-- .archive-header -->
 	<section id="primary" class="content-area <?php echo esc_attr($zap_site_width); ?>">

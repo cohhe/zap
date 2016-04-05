@@ -30,7 +30,7 @@ $sm_authot_description = get_the_author_meta( 'description', $sm_author_id );
 					 * We reset this later so we can run the loop properly
 					 * with a call to rewind_posts().
 					 */
-					_e('Author: ', 'zap');
+					_e('Author: ', 'zap-lite');
 					the_author();
 				?>
 			</h1>

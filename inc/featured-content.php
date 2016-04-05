@@ -10,7 +10,7 @@
  * this tag now has special meaning beyond that of a normal tags, users
  * will have the ability to hide it from the front-end of their site.
  */
-class Featured_Content {
+class Zap_Featured_Content {
 
 	/**
 	 * The maximum number of posts a Featured Content area can contain.
@@ -19,7 +19,7 @@ class Featured_Content {
 	 * this by defining a "max_posts" entry in the second parameter
 	 * passed in the call to add_theme_support( 'featured-content' ).
 	 *
-	 * @see Featured_Content::init()
+	 * @see Zap_Featured_Content::init()
 	 *
 	 * @since Zap 1.0
 	 *
@@ -235,7 +235,7 @@ class Featured_Content {
 	 *
 	 * Hooks in the "save_post" action.
 	 *
-	 * @see Featured_Content::validate_settings().
+	 * @see Zap_Featured_Content::validate_settings().
 	 *
 	 * @static
 	 * @access public
@@ -296,11 +296,11 @@ class Featured_Content {
 	 *
 	 * It's important to mention that the transient needs to be deleted,
 	 * too. While it may not be obvious by looking at the function alone,
-	 * the transient is deleted by Featured_Content::validate_settings().
+	 * the transient is deleted by Zap_Featured_Content::validate_settings().
 	 *
 	 * Hooks in the "delete_post_tag" action.
 	 *
-	 * @see Featured_Content::validate_settings().
+	 * @see Zap_Featured_Content::validate_settings().
 	 *
 	 * @static
 	 * @access public
@@ -334,7 +334,7 @@ class Featured_Content {
 	 * @param array $taxonomies An array of taxonomy slugs.
 	 * @return array A filtered array of terms.
 	 *
-	 * @uses Featured_Content::get_setting()
+	 * @uses Zap_Featured_Content::get_setting()
 	 */
 	public static function hide_featured_term( $terms, $taxonomies ) {
 
@@ -377,7 +377,7 @@ class Featured_Content {
 	 * @param array $taxonomy An array of taxonomy slugs.
 	 * @return array Filtered array of terms.
 	 *
-	 * @uses Featured_Content::get_setting()
+	 * @uses Zap_Featured_Content::get_setting()
 	 */
 	public static function hide_the_featured_term( $terms, $id, $taxonomy ) {
 
@@ -429,8 +429,8 @@ class Featured_Content {
 	 */
 	public static function customize_register( $wp_customize ) {
 		$wp_customize->add_section( 'featured_content', array(
-			'title'          => __( 'Featured Content', 'zap' ),
-			'description'    => sprintf( __( 'Use the <a href="%1$s">"featured" tag</a> to feature your posts. You can change this to a tag of your choice; if no posts match the tag, <a href="%2$s">sticky posts</a> will be displayed instead.', 'zap' ), admin_url( '/edit.php?tag=featured' ), admin_url( '/edit.php?show_sticky=1' ) ),
+			'title'          => __( 'Featured Content', 'zap-lite' ),
+			'description'    => sprintf( __( 'Use the <a href="%1$s">"featured" tag</a> to feature your posts. You can change this to a tag of your choice; if no posts match the tag, <a href="%2$s">sticky posts</a> will be displayed instead.', 'zap-lite' ), admin_url( '/edit.php?tag=featured' ), admin_url( '/edit.php?show_sticky=1' ) ),
 			'priority'       => 130,
 			'theme_supports' => 'featured-content',
 		) );
@@ -459,7 +459,7 @@ class Featured_Content {
 
 		// Add Featured Content controls.
 		$wp_customize->add_control( 'featured-content[order]', array(
-			'label'    => __( 'Post order', 'zap' ),
+			'label'    => __( 'Post order', 'zap-lite' ),
 			'section'  => 'featured_content',
 			'type'       => 'select',
 			'choices'    => array(
@@ -470,18 +470,18 @@ class Featured_Content {
 			'priority' => 15,
 		) );
 		$wp_customize->add_control( 'featured-content[tag-name]', array(
-			'label'    => __( 'Tag Name', 'zap' ),
+			'label'    => __( 'Tag Name', 'zap-lite' ),
 			'section'  => 'featured_content',
 			'priority' => 20,
 		) );
 		$wp_customize->add_control( 'featured-content[hide-tag]', array(
-			'label'    => __( 'Don&rsquo;t display tag on front end.', 'zap' ),
+			'label'    => __( 'Don&rsquo;t display tag on front end.', 'zap-lite' ),
 			'section'  => 'featured_content',
 			'type'     => 'checkbox',
 			'priority' => 40,
 		) );
 		$wp_customize->add_control( 'featured-content[quantity]', array(
-			'label'    => __( 'Post limit', 'zap' ),
+			'label'    => __( 'Post limit', 'zap-lite' ),
 			'section'  => 'featured_content',
 			'priority' => 30,
 		) );
@@ -545,7 +545,7 @@ class Featured_Content {
 	 *
 	 * Make sure that all user supplied content is in an expected
 	 * format before saving to the database. This function will also
-	 * delete the transient set in Featured_Content::get_featured_content().
+	 * delete the transient set in Zap_Featured_Content::get_featured_content().
 	 *
 	 * @static
 	 * @access public
@@ -611,6 +611,6 @@ class Featured_Content {
 		return $quantity;
 	}
 
-} // Featured_Content
+} // Zap_Featured_Content
 
-Featured_Content::setup();
+Zap_Featured_Content::setup();

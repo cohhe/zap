@@ -24,7 +24,7 @@ global $zap_site_width;
 		<?php if ( is_home() && !is_front_page() ) {
 			echo '<header class="entry-header">';
 			echo '<h1 class="entry-title">' . get_the_title(get_option( 'page_for_posts' )) . '</h1>';
-			echo '<div class="breadcrumb"><a href="'.home_url( '/' ).'">'.__('Home', 'zap').'</a><span class="delimiter">/</span><a href="'.get_permalink(get_option( 'page_for_posts' )).'">'.get_the_title(get_option( 'page_for_posts' )).'</a></div>';
+			echo '<div class="breadcrumb"><a href="'.home_url( '/' ).'">'.__('Home', 'zap-lite').'</a><span class="delimiter">/</span><a href="'.get_permalink(get_option( 'page_for_posts' )).'">'.get_the_title(get_option( 'page_for_posts' )).'</a></div>';
 			echo '</header><!-- .entry-header -->';
 		} ?>
 		<div id="content" class="site-content" role="main">

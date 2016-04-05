@@ -70,7 +70,7 @@ if ( ! function_exists( 'zap_setup' ) ) :
 		 * replace to change 'zap' to the name of your theme in all
 		 * template files.
 		 */
-		load_theme_textdomain( 'zap', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'zap-lite', get_template_directory() . '/languages' );
 
 		// This theme styles the visual editor to resemble the theme style.
 		add_editor_style( array( 'css/editor-style.css' ) );
@@ -90,8 +90,8 @@ if ( ! function_exists( 'zap_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus( array(
-			'primary'   => __( 'Top primary menu', 'zap' ),
-			'footer'    => __( 'Footer menu', 'zap' ),
+			'primary'   => __( 'Top primary menu', 'zap-lite' ),
+			'footer'    => __( 'Footer menu', 'zap-lite' ),
 		) );
 
 		/*
@@ -133,8 +133,8 @@ function zap_tag_list() {
 	if ( $tags_list ) {
 		$entry_utility .= '
 		<div class="tag-link">
-		<span class="tag-title">'.__('Tags', 'zap').'</span>
-		' . sprintf( __( '<span class="%1$s"></span> %2$s', 'zap' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list );
+		<span class="tag-title">'.__('Tags', 'zap-lite').'</span>
+		' . sprintf( __( '<span class="%1$s"></span> %2$s', 'zap-lite' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list );
 		$entry_utility .= '
 		</div>';
 	}
@@ -149,7 +149,7 @@ function zap_category_list() {
 		$entry_utility .= '
 		<div class="category-link">
 		<i class="entypo_icon icon-folder-open"></i>
-		' . sprintf( __( '<span class="%1$s"></span> %2$s', 'zap' ), 'entry-utility-prep entry-utility-prep-category-links', $tags_list );
+		' . sprintf( __( '<span class="%1$s"></span> %2$s', 'zap-lite' ), 'entry-utility-prep entry-utility-prep-category-links', $tags_list );
 		$entry_utility .= '
 		</div>';
 	}
@@ -165,7 +165,7 @@ function zap_prev_next_links() {
 		if (!empty( $prev_post )) {
 			$output .= '
 			<div class="nav_button left">
-				<span class="prev-post-text">'. __('Previous post', 'zap').'</span>
+				<span class="prev-post-text">'. __('Previous post', 'zap-lite').'</span>
 				<div class="prev-post-link">
 					<a href="'. get_permalink( $prev_post->ID ).'" class="prev_blog_post icon-left">'.get_the_title( $prev_post->ID ).'</a>
 				</div>
@@ -175,7 +175,7 @@ function zap_prev_next_links() {
 		if (!empty( $next_post )) {
 			$output .= '
 			<div class="nav_button right">
-				<span class="next-post-text">'.__('Next post', 'zap').'</span>
+				<span class="next-post-text">'.__('Next post', 'zap-lite').'</span>
 				<div class="next-post-link">
 					<a href="'. get_permalink( $next_post->ID ).'" class="next_blog_post icon-right">'. get_the_title( $next_post->ID ).'</a>
 				</div>
@@ -216,47 +216,47 @@ add_action( 'template_redirect', 'zap_content_width' );
  */
 function zap_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Post Sidebar', 'zap' ),
+		'name'          => __( 'Post Sidebar', 'zap-lite' ),
 		'id'            => 'zap-sidebar-1',
 		'class'			=> 'col-sm-4 col-md-4 col-lg-4',
-		'description'   => __( 'Additional sidebar that appears on the right or left.', 'zap' ),
+		'description'   => __( 'Additional sidebar that appears on the right or left.', 'zap-lite' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Content Sidebar', 'zap' ),
+		'name'          => __( 'Content Sidebar', 'zap-lite' ),
 		'id'            => 'zap-sidebar-2',
 		'class'			=> 'col-sm-4 col-md-4 col-lg-4',
-		'description'   => __( 'Additional sidebar that appears on the right or left.', 'zap' ),
+		'description'   => __( 'Additional sidebar that appears on the right or left.', 'zap-lite' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Footer Widget Area 1', 'zap' ),
+		'name'          => __( 'Footer Widget Area 1', 'zap-lite' ),
 		'id'            => 'zap-sidebar-3',
-		'description'   => __( 'Appears in the footer section of the site.', 'zap' ),
+		'description'   => __( 'Appears in the footer section of the site.', 'zap-lite' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Footer Widget Area 2', 'zap' ),
+		'name'          => __( 'Footer Widget Area 2', 'zap-lite' ),
 		'id'            => 'zap-sidebar-4',
-		'description'   => __( 'Appears in the footer section of the site.', 'zap' ),
+		'description'   => __( 'Appears in the footer section of the site.', 'zap-lite' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Footer Widget Area 3', 'zap' ),
+		'name'          => __( 'Footer Widget Area 3', 'zap-lite' ),
 		'id'            => 'zap-sidebar-5',
-		'description'   => __( 'Appears in the footer section of the site.', 'zap' ),
+		'description'   => __( 'Appears in the footer section of the site.', 'zap-lite' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
@@ -283,22 +283,6 @@ function zap_font_url() {
 	return $font_url;
 }
 
-function zap_like_button() {
-	$post_id = get_the_ID();
-	if ( function_exists('ldc_like_counter_p') ) {
-		$vote_count = get_post_ul_meta($post_id,"like");
-		if ( intval($vote_count) == 0 ) {
-			$output = "<span class='single-post-like icon-heart-empty' onclick=\"alter_ul_post_values(this,'$post_id','like')\" ><span>".get_post_ul_meta($post_id,"like")."</span></span>";;
-		} else {
-			$output = "<span class='single-post-like icon-heart-1' onclick=\"alter_ul_post_values(this,'$post_id','like')\" ><span>".get_post_ul_meta($post_id,"like")."</span></span>";;
-		}
-	} else {
-		$output = '';
-	}
-
-	return $output;
-}
-
 function zap_excerpt_length( $length ) {
 	return 20;
 }
@@ -307,7 +291,7 @@ add_filter( 'excerpt_length', 'zap_excerpt_length', 999 );
 function zap_breadcrumbs() {
 	$delimiter = get_option('vh_breadcrumb_delimiter') ? get_option('vh_breadcrumb_delimiter') : '<span class="delimiter">/</span>';
 
-	$home   = __('Home', 'zap'); // text for the 'Home' link
+	$home   = __('Home', 'zap-lite'); // text for the 'Home' link
 	$before = '<span class="current">'; // tag before the current crumb
 	$after  = '</span>'; // tag after the current crumb
 
@@ -326,7 +310,7 @@ function zap_breadcrumbs() {
 			$parentCat = get_category($thisCat->parent);
 			if ($thisCat->parent != 0)
 				$output .= get_category_parents($parentCat, TRUE, ' ' . $delimiter . ' ');
-			$output .= $before . __('Archive by category', 'zap') . ' "' . single_cat_title('', false) . '"' . $after;
+			$output .= $before . __('Archive by category', 'zap-lite') . ' "' . single_cat_title('', false) . '"' . $after;
 		} elseif (is_day()) {
 			$output .= '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';
 			$output .= '<a href="' . get_month_link(get_the_time('Y'), get_the_time('m')) . '">' . get_the_time('F') . '</a> ' . $delimiter . ' ';
@@ -377,21 +361,21 @@ function zap_breadcrumbs() {
 			}
 			$output .= $before . get_the_title() . $after;
 		} elseif (is_search()) {
-			$output .= $before . __('Search results for', 'zap') . ' "' . get_search_query() . '"' . $after;
+			$output .= $before . __('Search results for', 'zap-lite') . ' "' . get_search_query() . '"' . $after;
 		} elseif (is_tag()) {
-			$output .= $before . __('Posts tagged', 'zap') . ' "' . single_tag_title('', false) . '"' . $after;
+			$output .= $before . __('Posts tagged', 'zap-lite') . ' "' . single_tag_title('', false) . '"' . $after;
 		} elseif (is_author()) {
 			global $vh_author;
 			$userdata = get_userdata($vh_author);
-			$output .= $before . __('Articles posted by', 'zap') . ' ' . get_the_author() . $after;
+			$output .= $before . __('Articles posted by', 'zap-lite') . ' ' . get_the_author() . $after;
 		} elseif (is_404()) {
-			$output .= $before . __('Error 404', 'zap') . $after;
+			$output .= $before . __('Error 404', 'zap-lite') . $after;
 		}
 
 		if (get_query_var('paged')) {
 			if (is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author())
 				$output .= ' (';
-			$output .= __('Page', 'zap') . ' ' . get_query_var('paged');
+			$output .= __('Page', 'zap-lite') . ' ' . get_query_var('paged');
 			if (is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author())
 				$output .= ')';
 		}
@@ -414,8 +398,8 @@ function zap_scripts() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array() );
 
 	// Add Google fonts
-	wp_register_style('googleFonts', '//fonts.googleapis.com/css?family=Open+Sans:400,600,300,700&subset=latin');
-	wp_enqueue_style( 'googleFonts');
+	wp_register_style('zap-googleFonts', '//fonts.googleapis.com/css?family=Open+Sans:400,600,300,700&subset=latin');
+	wp_enqueue_style( 'zap-googleFonts');
 
 	// Add Genericons font, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.2' );
@@ -436,15 +420,15 @@ function zap_scripts() {
 
 	wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.min.css', array() );
 
-	wp_enqueue_script( 'jquery.bxslider', get_template_directory_uri() . '/js/jquery.bxslider.min.js', array( 'jquery' ), '', true );
+	wp_enqueue_script( 'jquery-bxslider', get_template_directory_uri() . '/js/jquery.bxslider.min.js', array( 'jquery' ), '', true );
 
-	wp_enqueue_script( 'jquery.jcarousel', get_template_directory_uri() . '/js/jquery.jcarousel.pack.js', array( 'jquery' ), '', true );
+	wp_enqueue_script( 'jquery-jcarousel', get_template_directory_uri() . '/js/jquery.jcarousel.pack.js', array( 'jquery' ), '', true );
 
-	wp_enqueue_script( 'jquery.isotope', get_template_directory_uri() . '/js/jquery.isotope.min.js', array( 'jquery' ), '', true );
+	wp_enqueue_script( 'jquery-isotope', get_template_directory_uri() . '/js/jquery.isotope.min.js', array( 'jquery' ), '', true );
 
 	wp_enqueue_script( 'jquery-ui-draggable' );
 
-	wp_enqueue_script('googlemap', '//maps.googleapis.com/maps/api/js?sensor=false', array(), '3', false);
+	wp_enqueue_script('zap-googlemap', '//maps.googleapis.com/maps/api/js?sensor=false', array(), '3', false);
 
 	// Add html5
 	wp_enqueue_script( 'html5shiv', get_template_directory_uri() . '/js/html5.js' );
@@ -455,8 +439,8 @@ add_action( 'wp_enqueue_scripts', 'zap_scripts' );
 // Admin Javascript
 add_action( 'admin_enqueue_scripts', 'zap_admin_scripts' );
 function zap_admin_scripts() {
-	wp_register_script('master', get_template_directory_uri() . '/inc/js/admin-master.js', array('jquery'));
-	wp_enqueue_script('master');
+	wp_register_script('zap-master', get_template_directory_uri() . '/inc/js/admin-master.js', array('jquery'));
+	wp_enqueue_script('zap-master');
 }
 
 if ( ! function_exists( 'zap_the_attached_image' ) ) :
@@ -574,13 +558,27 @@ function zap_body_classes( $classes ) {
 		$classes[] = 'grid';
 	}
 
-	if( isset($post->post_content) && has_shortcode( $post->post_content, 'zap_main_slider' ) ) {
+	$featured_id = get_theme_mod('zap_sliderid', '');
+	if ( ( $featured_id == '' && is_front_page() ) || ( get_queried_object_id() == intval($featured_id) ) ) {
 		$classes[] = 'zap-main-slider';
 	}
 
 	return $classes;
 }
 add_filter( 'body_class', 'zap_body_classes' );
+
+function zap_post_classes( $classes ) {
+	if ( !is_page() ) {
+		if ( !is_single() ) {
+			$classes[] = 'not-single-post';
+		} else {
+			$classes[] = 'single-post';
+		}
+	}
+
+	return $classes;
+}
+add_filter( 'post_class', 'zap_post_classes' );
 
 /* Related posts */
 function zap_the_related_posts() {
@@ -603,7 +601,7 @@ function zap_the_related_posts() {
 
 		$my_query = new wp_query( $args ); ?>
 
-		<h2 class="related-articles-title"><?php _e( 'Related posts', 'zap' ); ?></h2>
+		<h2 class="related-articles-title"><?php _e( 'Related posts', 'zap-lite' ); ?></h2>
 		<div class="related-articles">
 			<?php
 			if ( $my_query->have_posts() ) {
@@ -617,17 +615,17 @@ function zap_the_related_posts() {
 								if ( has_post_thumbnail() ) {
 									the_post_thumbnail('zap-related-thumbnail');
 								} else {
-									echo '<img src="'.get_template_directory_uri().'/images/no-post-img.png" class="related-post-image" alt="'.__('Post without image', 'zap').'">';
+									echo '<img src="'.get_template_directory_uri().'/images/no-post-img.png" class="related-post-image" alt="'.__('Post without image', 'zap-lite').'">';
 								}
 								?>
-								<span class="single-open-post-date"><?php echo human_time_diff(get_the_time('U',get_the_ID()),current_time('timestamp')) .  ' '.__('ago', 'zap'); ?></span>
+								<span class="single-open-post-date"><?php echo human_time_diff(get_the_time('U',get_the_ID()),current_time('timestamp')) .  ' '.__('ago', 'zap-lite'); ?></span>
 							</div>
 						</a>
 						<a href="<?php the_permalink(); ?>" class="related-title"><?php the_title(); ?></a>
 					</div>
 				<?php }
 			} else { ?>
-				<h3 class="no-related-posts"><?php _e('There\'s no related posts!', 'zap'); ?></h3>
+				<h3 class="no-related-posts"><?php _e('There\'s no related posts!', 'zap-lite'); ?></h3>
 			<?php } ?>
 			<div class="clearfix"></div>
 		</div>
@@ -665,7 +663,7 @@ function zap_wp_title( $title, $sep ) {
 
 	// Add a page number if necessary.
 	if ( $paged >= 2 || $page >= 2 ) {
-		$title = "$title $sep " . sprintf( __( 'Page %s', 'zap' ), max( $paged, $page ) );
+		$title = "$title $sep " . sprintf( __( 'Page %s', 'zap-lite' ), max( $paged, $page ) );
 	}
 
 	return $title;
@@ -681,10 +679,10 @@ require get_template_directory() . '/inc/customizer.php';
 /*
  * Add Featured Content functionality.
  *
- * To overwrite in a plugin, define your own Featured_Content class on or
+ * To overwrite in a plugin, define your own Zap_Featured_Content class on or
  * before the 'setup_theme' hook.
  */
-if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
+if ( ! class_exists( 'Zap_Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
 	require get_template_directory() . '/inc/featured-content.php';
 }
 
@@ -805,16 +803,6 @@ class Zap_Header_Menu_Walker extends Walker_Nav_Menu {
 	}
 }
 
-function get_depth($postid) {
-$depth = ($postid==get_option('page_on_front')) ? -1 : 0;
-while ($postid > 0) {
-$postid = get_post_ancestors($postid);
-$postid = $postid[0];
-$depth++;
-}
-return $depth;
-}
-
 /**
  * Register the required plugins for this theme.
  *
@@ -827,7 +815,7 @@ return $depth;
  * This function is hooked into tgmpa_init, which is fired within the
  * TGM_Plugin_Activation class constructor.
  */
-function vh_register_required_plugins() {
+function zap_register_required_plugins() {
 
 	/**
 	 * Array of plugin arrays. Required keys are name and slug.
@@ -874,7 +862,7 @@ function vh_register_required_plugins() {
 			'name'     				=> 'Functionality for Zap theme', // The plugin name
 			'slug'     				=> 'functionality-for-zap-theme', // The plugin slug (typically the folder name)
 			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '1.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 				=> '1.2', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -924,36 +912,27 @@ function vh_register_required_plugins() {
 		'is_automatic'    	=> true,					   	// Automatically activate plugins after installation or not
 		'message' 			=> '',							// Message to output right before the plugins table
 		'strings'      		=> array(
-			'page_title'                       			=> __( 'Install Required Plugins', 'zap' ),
-			'menu_title'                       			=> __( 'Install Plugins', 'zap' ),
-			'installing'                       			=> __( 'Installing Plugin: %s', 'zap' ), // %1$s = plugin name
-			'oops'                             			=> __( 'Something went wrong with the plugin API.', 'zap' ),
-			'notice_can_install_required'     			=> _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.', 'zap' ), // %1$s = plugin name(s)
-			'notice_can_install_recommended'			=> _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.', 'zap' ), // %1$s = plugin name(s)
-			'notice_cannot_install'  					=> _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.', 'zap' ), // %1$s = plugin name(s)
-			'notice_can_activate_required'    			=> _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.', 'zap' ), // %1$s = plugin name(s)
-			'notice_can_activate_recommended'			=> _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.', 'zap' ), // %1$s = plugin name(s)
-			'notice_cannot_activate' 					=> _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.', 'zap' ), // %1$s = plugin name(s)
-			'notice_ask_to_update' 						=> _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.', 'zap' ), // %1$s = plugin name(s)
-			'notice_cannot_update' 						=> _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.', 'zap' ), // %1$s = plugin name(s)
-			'install_link' 					  			=> _n_noop( 'Begin installing plugin', 'Begin installing plugins', 'zap' ),
-			'activate_link' 				  			=> _n_noop( 'Activate installed plugin', 'Activate installed plugins', 'zap' ),
-			'return'                           			=> __( 'Return to Required Plugins Installer', 'zap' ),
-			'plugin_activated'                 			=> __( 'Plugin activated successfully.', 'zap' ),
-			'complete' 									=> __( 'All plugins installed and activated successfully. %s', 'zap' ), // %1$s = dashboard link
+			'page_title'                       			=> __( 'Install Required Plugins', 'zap-lite' ),
+			'menu_title'                       			=> __( 'Install Plugins', 'zap-lite' ),
+			'installing'                       			=> __( 'Installing Plugin: %s', 'zap-lite' ), // %1$s = plugin name
+			'oops'                             			=> __( 'Something went wrong with the plugin API.', 'zap-lite' ),
+			'notice_can_install_required'     			=> _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.', 'zap-lite' ), // %1$s = plugin name(s)
+			'notice_can_install_recommended'			=> _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.', 'zap-lite' ), // %1$s = plugin name(s)
+			'notice_cannot_install'  					=> _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.', 'zap-lite' ), // %1$s = plugin name(s)
+			'notice_can_activate_required'    			=> _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.', 'zap-lite' ), // %1$s = plugin name(s)
+			'notice_can_activate_recommended'			=> _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.', 'zap-lite' ), // %1$s = plugin name(s)
+			'notice_cannot_activate' 					=> _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.', 'zap-lite' ), // %1$s = plugin name(s)
+			'notice_ask_to_update' 						=> _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.', 'zap-lite' ), // %1$s = plugin name(s)
+			'notice_cannot_update' 						=> _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.', 'zap-lite' ), // %1$s = plugin name(s)
+			'install_link' 					  			=> _n_noop( 'Begin installing plugin', 'Begin installing plugins', 'zap-lite' ),
+			'activate_link' 				  			=> _n_noop( 'Activate installed plugin', 'Activate installed plugins', 'zap-lite' ),
+			'return'                           			=> __( 'Return to Required Plugins Installer', 'zap-lite' ),
+			'plugin_activated'                 			=> __( 'Plugin activated successfully.', 'zap-lite' ),
+			'complete' 									=> __( 'All plugins installed and activated successfully. %s', 'zap-lite' ), // %1$s = dashboard link
 			'nag_type'									=> 'updated' // Determines admin notice type - can only be 'updated' or 'error'
 		)
 	);
 
 	tgmpa( $plugins, $config );
 }
-add_action( 'tgmpa_register', 'vh_register_required_plugins' );
-
-function zap_allowed_tags() {
-	global $allowedposttags;
-	$allowedposttags['script'] = array(
-		'type' => true,
-		'src' => true
-	);
-}
-add_action( 'init', 'zap_allowed_tags' );
+add_action( 'tgmpa_register', 'zap_register_required_plugins' );

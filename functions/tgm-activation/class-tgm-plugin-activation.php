@@ -330,10 +330,10 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
 			// Load class strings.
 			$this->strings = array(
-				'page_title'                      => __( 'Install Required Plugins', 'zap' ),
-				'menu_title'                      => __( 'Install Plugins', 'zap' ),
-				'installing'                      => __( 'Installing Plugin: %s', 'zap' ),
-				'oops'                            => __( 'Something went wrong with the plugin API.', 'zap' ),
+				'page_title'                      => __( 'Install Required Plugins', 'zap-lite' ),
+				'menu_title'                      => __( 'Install Plugins', 'zap-lite' ),
+				'installing'                      => __( 'Installing Plugin: %s', 'zap-lite' ),
+				'oops'                            => __( 'Something went wrong with the plugin API.', 'zap-lite' ),
 				'notice_can_install_required'     => _n_noop(
 					'This theme requires the following plugin: %1$s.',
 					'This theme requires the following plugins: %1$s.',
@@ -394,15 +394,15 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 					'Begin activating plugins',
 					'zap'
 				),
-				'return'                          => __( 'Return to Required Plugins Installer', 'zap' ),
-				'dashboard'                       => __( 'Return to the dashboard', 'zap' ),
-				'plugin_activated'                => __( 'Plugin activated successfully.', 'zap' ),
-				'activated_successfully'          => __( 'The following plugin was activated successfully:', 'zap' ),
-				'plugin_already_active'           => __( 'No action taken. Plugin %1$s was already active.', 'zap' ),
-				'plugin_needs_higher_version'     => __( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'zap' ),
-				'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'zap' ),
-				'dismiss'                         => __( 'Dismiss this notice', 'zap' ),
-				'contact_admin'                   => __( 'Please contact the administrator of this site for help.', 'zap' ),
+				'return'                          => __( 'Return to Required Plugins Installer', 'zap-lite' ),
+				'dashboard'                       => __( 'Return to the dashboard', 'zap-lite' ),
+				'plugin_activated'                => __( 'Plugin activated successfully.', 'zap-lite' ),
+				'activated_successfully'          => __( 'The following plugin was activated successfully:', 'zap-lite' ),
+				'plugin_already_active'           => __( 'No action taken. Plugin %1$s was already active.', 'zap-lite' ),
+				'plugin_needs_higher_version'     => __( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'zap-lite' ),
+				'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'zap-lite' ),
+				'dismiss'                         => __( 'Dismiss this notice', 'zap-lite' ),
+				'contact_admin'                   => __( 'Please contact the administrator of this site for help.', 'zap-lite' ),
 			);
 
 			do_action( 'tgmpa_register' );
@@ -517,8 +517,8 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			$actions['update'] = sprintf(
 				'<a href="%1$s" title="%2$s" class="edit">%3$s</a>',
 				esc_url( $this->get_tgmpa_status_url( 'update' ) ),
-				esc_attr__( 'This plugin needs to be updated to be compatible with your theme.', 'zap' ),
-				esc_html__( 'Update Required', 'zap' )
+				esc_attr__( 'This plugin needs to be updated to be compatible with your theme.', 'zap-lite' ),
+				esc_html__( 'Update Required', 'zap-lite' )
 			);
 
 			return $actions;
@@ -817,7 +817,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
 				// Display message based on if all plugins are now active or not.
 				if ( $this->is_tgmpa_complete() ) {
-					echo '<p>', sprintf( esc_html( $this->strings['complete'] ), '<a href="' . esc_url( self_admin_url() ) . '">' . esc_html__( 'Return to the Dashboard', 'zap' ) . '</a>' ), '</p>';
+					echo '<p>', sprintf( esc_html( $this->strings['complete'] ), '<a href="' . esc_url( self_admin_url() ) . '">' . esc_html__( 'Return to the Dashboard', 'zap-lite' ) . '</a>' ), '</p>';
 					echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
 				} else {
 					echo '<p><a href="', esc_url( $this->get_tgmpa_url() ), '" target="_parent">', esc_html( $this->strings['return'] ), '</a></p>';
@@ -924,10 +924,10 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 					if ( true === $GLOBALS['wp_filesystem']->move( $from, $to ) ) {
 						return trailingslashit( $to );
 					} else {
-						return new WP_Error( 'rename_failed', esc_html__( 'The remote plugin package does not contain a folder with the desired slug and renaming did not work.', 'zap' ) . ' ' . esc_html__( 'Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines.', 'zap' ), array( 'found' => $subdir_name, 'expected' => $desired_slug ) );
+						return new WP_Error( 'rename_failed', esc_html__( 'The remote plugin package does not contain a folder with the desired slug and renaming did not work.', 'zap-lite' ) . ' ' . esc_html__( 'Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines.', 'zap-lite' ), array( 'found' => $subdir_name, 'expected' => $desired_slug ) );
 					}
 				} elseif ( empty( $subdir_name ) ) {
-					return new WP_Error( 'packaged_wrong', esc_html__( 'The remote plugin package consists of more than one file, but the files are not packaged in a folder.', 'zap' ) . ' ' . esc_html__( 'Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines.', 'zap' ), array( 'found' => $subdir_name, 'expected' => $desired_slug ) );
+					return new WP_Error( 'packaged_wrong', esc_html__( 'The remote plugin package consists of more than one file, but the files are not packaged in a folder.', 'zap-lite' ) . ' ' . esc_html__( 'Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines.', 'zap-lite' ), array( 'found' => $subdir_name, 'expected' => $desired_slug ) );
 				}
 			}
 
@@ -1105,12 +1105,12 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 					$count          = count( $plugin_group );
 					$linked_plugins = array_map( array( 'TGMPA_Utils', 'wrap_in_em' ), $linked_plugins );
 					$last_plugin    = array_pop( $linked_plugins ); // Pop off last name to prep for readability.
-					$imploded       = empty( $linked_plugins ) ? $last_plugin : ( implode( ', ', $linked_plugins ) . ' ' . esc_html_x( 'and', 'plugin A *and* plugin B', 'zap' ) . ' ' . $last_plugin );
+					$imploded       = empty( $linked_plugins ) ? $last_plugin : ( implode( ', ', $linked_plugins ) . ' ' . esc_html_x( 'and', 'plugin A *and* plugin B', 'zap-lite' ) . ' ' . $last_plugin );
 
 					$rendered .= sprintf(
 						$line_template,
 						sprintf(
-							translate_nooped_plural( $this->strings[ $type ], $count, 'zap' ),
+							translate_nooped_plural( $this->strings[ $type ], $count, 'zap-lite' ),
 							$imploded,
 							$count
 						)
@@ -1136,14 +1136,14 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 					if ( $install_link_count > 0 ) {
 						$action_links['install'] = sprintf(
 							$link_template,
-							translate_nooped_plural( $this->strings['install_link'], $install_link_count, 'zap' ),
+							translate_nooped_plural( $this->strings['install_link'], $install_link_count, 'zap-lite' ),
 							esc_url( $this->get_tgmpa_status_url( 'install' ) )
 						);
 					}
 					if ( $update_link_count > 0 ) {
 						$action_links['update'] = sprintf(
 							$link_template,
-							translate_nooped_plural( $this->strings['update_link'], $update_link_count, 'zap' ),
+							translate_nooped_plural( $this->strings['update_link'], $update_link_count, 'zap-lite' ),
 							esc_url( $this->get_tgmpa_status_url( 'update' ) )
 						);
 					}
@@ -1152,7 +1152,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				if ( current_user_can( 'activate_plugins' ) && $activate_link_count > 0 ) {
 					$action_links['activate'] = sprintf(
 						$link_template,
-						translate_nooped_plural( $this->strings['activate_link'], $activate_link_count, 'zap' ),
+						translate_nooped_plural( $this->strings['activate_link'], $activate_link_count, 'zap-lite' ),
 						esc_url( $this->get_tgmpa_status_url( 'activate' ) )
 					);
 				}
@@ -1870,7 +1870,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		 */
 		public function show_tgmpa_version() {
 			echo '<p style="float: right; padding: 0em 1.5em 0.5em 0;"><strong><small>',
-				esc_html( sprintf( _x( 'TGMPA v%s', '%s = version number', 'zap' ), self::TGMPA_VERSION ) ),
+				esc_html( sprintf( _x( 'TGMPA v%s', '%s = version number', 'zap-lite' ), self::TGMPA_VERSION ) ),
 				'</small></strong></p>';
 		}
 
@@ -2156,10 +2156,10 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		 */
 		protected function get_plugin_advise_type_text( $required ) {
 			if ( true === $required ) {
-				return __( 'Required', 'zap' );
+				return __( 'Required', 'zap-lite' );
 			}
 
-			return __( 'Recommended', 'zap' );
+			return __( 'Recommended', 'zap-lite' );
 		}
 
 		/**
@@ -2175,13 +2175,13 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 			switch ( $type ) {
 				case 'repo':
-					$string = __( 'WordPress Repository', 'zap' );
+					$string = __( 'WordPress Repository', 'zap-lite' );
 					break;
 				case 'external':
-					$string = __( 'External Source', 'zap' );
+					$string = __( 'External Source', 'zap-lite' );
 					break;
 				case 'bundled':
-					$string = __( 'Pre-Packaged', 'zap' );
+					$string = __( 'Pre-Packaged', 'zap-lite' );
 					break;
 			}
 
@@ -2198,25 +2198,25 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		 */
 		protected function get_plugin_status_text( $slug ) {
 			if ( ! $this->tgmpa->is_plugin_installed( $slug ) ) {
-				return __( 'Not Installed', 'zap' );
+				return __( 'Not Installed', 'zap-lite' );
 			}
 
 			if ( ! $this->tgmpa->is_plugin_active( $slug ) ) {
-				$install_status = __( 'Installed But Not Activated', 'zap' );
+				$install_status = __( 'Installed But Not Activated', 'zap-lite' );
 			} else {
-				$install_status = __( 'Active', 'zap' );
+				$install_status = __( 'Active', 'zap-lite' );
 			}
 
 			$update_status = '';
 
 			if ( $this->tgmpa->does_plugin_require_update( $slug ) && false === $this->tgmpa->does_plugin_have_update( $slug ) ) {
-				$update_status = __( 'Required Update not Available', 'zap' );
+				$update_status = __( 'Required Update not Available', 'zap-lite' );
 
 			} elseif ( $this->tgmpa->does_plugin_require_update( $slug ) ) {
-				$update_status = __( 'Requires Update', 'zap' );
+				$update_status = __( 'Requires Update', 'zap-lite' );
 
 			} elseif ( false !== $this->tgmpa->does_plugin_have_update( $slug ) ) {
-				$update_status = __( 'Update recommended', 'zap' );
+				$update_status = __( 'Update recommended', 'zap-lite' );
 			}
 
 			if ( '' === $update_status ) {
@@ -2224,7 +2224,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 			}
 
 			return sprintf(
-				_x( '%1$s, %2$s', '%1$s = install status, %2$s = update status', 'zap' ),
+				_x( '%1$s, %2$s', '%1$s = install status, %2$s = update status', 'zap-lite' ),
 				$install_status,
 				$update_status
 			);
@@ -2269,16 +2269,16 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 				switch ( $type ) {
 					case 'all':
-						$text = _nx( 'All <span class="count">(%s)</span>', 'All <span class="count">(%s)</span>', $count, 'plugins', 'zap' );
+						$text = _nx( 'All <span class="count">(%s)</span>', 'All <span class="count">(%s)</span>', $count, 'plugins', 'zap-lite' );
 						break;
 					case 'install':
-						$text = _n( 'To Install <span class="count">(%s)</span>', 'To Install <span class="count">(%s)</span>', $count, 'zap' );
+						$text = _n( 'To Install <span class="count">(%s)</span>', 'To Install <span class="count">(%s)</span>', $count, 'zap-lite' );
 						break;
 					case 'update':
-						$text = _n( 'Update Available <span class="count">(%s)</span>', 'Update Available <span class="count">(%s)</span>', $count, 'zap' );
+						$text = _n( 'Update Available <span class="count">(%s)</span>', 'Update Available <span class="count">(%s)</span>', $count, 'zap-lite' );
 						break;
 					case 'activate':
-						$text = _n( 'To Activate <span class="count">(%s)</span>', 'To Activate <span class="count">(%s)</span>', $count, 'zap' );
+						$text = _n( 'To Activate <span class="count">(%s)</span>', 'To Activate <span class="count">(%s)</span>', $count, 'zap-lite' );
 						break;
 					default:
 						$text = '';
@@ -2360,7 +2360,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 			$output = array();
 
 			if ( $this->tgmpa->is_plugin_installed( $item['slug'] ) ) {
-				$installed = ! empty( $item['installed_version'] ) ? $item['installed_version'] : _x( 'unknown', 'as in: "version nr unknown"', 'zap' );
+				$installed = ! empty( $item['installed_version'] ) ? $item['installed_version'] : _x( 'unknown', 'as in: "version nr unknown"', 'zap-lite' );
 
 				$color = '';
 				if ( ! empty( $item['minimum_version'] ) && $this->tgmpa->does_plugin_require_update( $item['slug'] ) ) {
@@ -2368,7 +2368,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				}
 
 				$output[] = sprintf(
-					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __( 'Installed version:', 'zap' ) . '</p>',
+					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __( 'Installed version:', 'zap-lite' ) . '</p>',
 					$color,
 					$installed
 				);
@@ -2376,7 +2376,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 			if ( ! empty( $item['minimum_version'] ) ) {
 				$output[] = sprintf(
-					'<p><span style="min-width: 32px; text-align: right; float: right;">%1$s</span>' . __( 'Minimum required version:', 'zap' ) . '</p>',
+					'<p><span style="min-width: 32px; text-align: right; float: right;">%1$s</span>' . __( 'Minimum required version:', 'zap-lite' ) . '</p>',
 					$item['minimum_version']
 				);
 			}
@@ -2388,7 +2388,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				}
 
 				$output[] = sprintf(
-					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __( 'Available version:', 'zap' ) . '</p>',
+					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __( 'Available version:', 'zap-lite' ) . '</p>',
 					$color,
 					$item['available_version']
 				);
@@ -2411,7 +2411,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		 * @since 2.2.0
 		 */
 		public function no_items() {
-			printf( wp_kses_post( __( 'No plugins to install, update or activate. <a href="%1$s">Return to the Dashboard</a>', 'zap' ) ), esc_url( self_admin_url() ) );
+			printf( wp_kses_post( __( 'No plugins to install, update or activate. <a href="%1$s">Return to the Dashboard</a>', 'zap-lite' ) ), esc_url( self_admin_url() ) );
 			echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
 		}
 
@@ -2425,14 +2425,14 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		public function get_columns() {
 			$columns = array(
 				'cb'     => '<input type="checkbox" />',
-				'plugin' => __( 'Plugin', 'zap' ),
-				'source' => __( 'Source', 'zap' ),
-				'type'   => __( 'Type', 'zap' ),
+				'plugin' => __( 'Plugin', 'zap-lite' ),
+				'source' => __( 'Source', 'zap-lite' ),
+				'type'   => __( 'Type', 'zap-lite' ),
 			);
 
 			if ( 'all' === $this->view_context || 'update' === $this->view_context ) {
-				$columns['version'] = __( 'Version', 'zap' );
-				$columns['status']  = __( 'Status', 'zap' );
+				$columns['version'] = __( 'Version', 'zap-lite' );
+				$columns['status']  = __( 'Status', 'zap-lite' );
 			}
 
 			return apply_filters( 'tgmpa_table_columns', $columns );
@@ -2480,16 +2480,16 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 			// Display the 'Install' action link if the plugin is not yet available.
 			if ( ! $this->tgmpa->is_plugin_installed( $item['slug'] ) ) {
-				$actions['install'] = _x( 'Install %2$s', '%2$s = plugin name in screen reader markup', 'zap' );
+				$actions['install'] = _x( 'Install %2$s', '%2$s = plugin name in screen reader markup', 'zap-lite' );
 			} else {
 				// Display the 'Update' action link if an update is available and WP complies with plugin minimum.
 				if ( false !== $this->tgmpa->does_plugin_have_update( $item['slug'] ) && $this->tgmpa->can_plugin_update( $item['slug'] ) ) {
-					$actions['update'] = _x( 'Update %2$s', '%2$s = plugin name in screen reader markup', 'zap' );
+					$actions['update'] = _x( 'Update %2$s', '%2$s = plugin name in screen reader markup', 'zap-lite' );
 				}
 
 				// Display the 'Activate' action link, but only if the plugin meets the minimum version.
 				if ( $this->tgmpa->can_plugin_activate( $item['slug'] ) ) {
-					$actions['activate'] = _x( 'Activate %2$s', '%2$s = plugin name in screen reader markup', 'zap' );
+					$actions['activate'] = _x( 'Activate %2$s', '%2$s = plugin name in screen reader markup', 'zap-lite' );
 				}
 			}
 
@@ -2559,7 +2559,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				<tr class="plugin-update-tr">
 					<td colspan="', absint( $this->get_column_count() ), '" class="plugin-update colspanchange">
 						<div class="update-message">',
-							esc_html__( 'Upgrade message from the plugin author:', 'zap' ),
+							esc_html__( 'Upgrade message from the plugin author:', 'zap-lite' ),
 							' <strong>', wp_kses_data( $item['upgrade_notice'] ), '</strong>
 						</div>
 					</td>
@@ -2592,16 +2592,16 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 			if ( 'update' !== $this->view_context && 'activate' !== $this->view_context ) {
 				if ( current_user_can( 'install_plugins' ) ) {
-					$actions['tgmpa-bulk-install'] = __( 'Install', 'zap' );
+					$actions['tgmpa-bulk-install'] = __( 'Install', 'zap-lite' );
 				}
 			}
 
 			if ( 'install' !== $this->view_context ) {
 				if ( current_user_can( 'update_plugins' ) ) {
-					$actions['tgmpa-bulk-update'] = __( 'Update', 'zap' );
+					$actions['tgmpa-bulk-update'] = __( 'Update', 'zap-lite' );
 				}
 				if ( current_user_can( 'activate_plugins' ) ) {
-					$actions['tgmpa-bulk-activate'] = __( 'Activate', 'zap' );
+					$actions['tgmpa-bulk-activate'] = __( 'Activate', 'zap-lite' );
 				}
 			}
 
@@ -2632,9 +2632,9 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				// Did user actually select any plugins to install/update ?
 				if ( empty( $_POST['plugin'] ) ) {
 					if ( 'install' === $install_type ) {
-						$message = __( 'No plugins were selected to be installed. No action taken.', 'zap' );
+						$message = __( 'No plugins were selected to be installed. No action taken.', 'zap-lite' );
 					} else {
-						$message = __( 'No plugins were selected to be updated. No action taken.', 'zap' );
+						$message = __( 'No plugins were selected to be updated. No action taken.', 'zap-lite' );
 					}
 
 					echo '<div id="message" class="error"><p>', esc_html( $message ), '</p></div>';
@@ -2670,9 +2670,9 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				// No need to proceed further if we have no plugins to handle.
 				if ( empty( $plugins_to_install ) ) {
 					if ( 'install' === $install_type ) {
-						$message = __( 'No plugins are available to be installed at this time.', 'zap' );
+						$message = __( 'No plugins are available to be installed at this time.', 'zap-lite' );
 					} else {
-						$message = __( 'No plugins are available to be updated at this time.', 'zap' );
+						$message = __( 'No plugins are available to be updated at this time.', 'zap-lite' );
 					}
 
 					echo '<div id="message" class="error"><p>', esc_html( $message ), '</p></div>';
@@ -2777,7 +2777,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 				// Did user actually select any plugins to activate ?
 				if ( empty( $_POST['plugin'] ) ) {
-					echo '<div id="message" class="error"><p>', esc_html__( 'No plugins were selected to be activated. No action taken.', 'zap' ), '</p></div>';
+					echo '<div id="message" class="error"><p>', esc_html__( 'No plugins were selected to be activated. No action taken.', 'zap-lite' ), '</p></div>';
 
 					return false;
 				}
@@ -2803,7 +2803,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 				// Return early if there are no plugins to activate.
 				if ( empty( $plugins_to_activate ) ) {
-					echo '<div id="message" class="error"><p>', esc_html__( 'No plugins are available to be activated at this time.', 'zap' ), '</p></div>';
+					echo '<div id="message" class="error"><p>', esc_html__( 'No plugins are available to be activated at this time.', 'zap-lite' ), '</p></div>';
 
 					return false;
 				}
@@ -2817,11 +2817,11 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 					$count        = count( $plugin_names ); // Count so we can use _n function.
 					$plugin_names = array_map( array( 'TGMPA_Utils', 'wrap_in_strong' ), $plugin_names );
 					$last_plugin  = array_pop( $plugin_names ); // Pop off last name to prep for readability.
-					$imploded     = empty( $plugin_names ) ? $last_plugin : ( implode( ', ', $plugin_names ) . ' ' . esc_html_x( 'and', 'plugin A *and* plugin B', 'zap' ) . ' ' . $last_plugin );
+					$imploded     = empty( $plugin_names ) ? $last_plugin : ( implode( ', ', $plugin_names ) . ' ' . esc_html_x( 'and', 'plugin A *and* plugin B', 'zap-lite' ) . ' ' . $last_plugin );
 
 					printf( // WPCS: xss ok.
 						'<div id="message" class="updated"><p>%1$s %2$s.</p></div>',
-						esc_html( _n( 'The following plugin was activated successfully:', 'The following plugins were activated successfully:', $count, 'zap' ) ),
+						esc_html( _n( 'The following plugin was activated successfully:', 'The following plugins were activated successfully:', $count, 'zap-lite' ) ),
 						$imploded
 					);
 
@@ -3017,8 +3017,8 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 					 * @since 2.2.0
 					 */
 					public function activate_strings() {
-						$this->strings['activation_failed']  = __( 'Plugin activation failed.', 'zap' );
-						$this->strings['activation_success'] = __( 'Plugin activated successfully.', 'zap' );
+						$this->strings['activation_failed']  = __( 'Plugin activation failed.', 'zap-lite' );
+						$this->strings['activation_success'] = __( 'Plugin activated successfully.', 'zap-lite' );
 					}
 
 					/**
@@ -3351,23 +3351,23 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 					public function add_strings() {
 						if ( 'update' === $this->options['install_type'] ) {
 							parent::add_strings();
-							$this->upgrader->strings['skin_before_update_header'] = __( 'Updating Plugin %1$s (%2$d/%3$d)', 'zap' );
+							$this->upgrader->strings['skin_before_update_header'] = __( 'Updating Plugin %1$s (%2$d/%3$d)', 'zap-lite' );
 						} else {
-							$this->upgrader->strings['skin_update_failed_error'] = __( 'An error occurred while installing %1$s: <strong>%2$s</strong>.', 'zap' );
-							$this->upgrader->strings['skin_update_failed']       = __( 'The installation of %1$s failed.', 'zap' );
+							$this->upgrader->strings['skin_update_failed_error'] = __( 'An error occurred while installing %1$s: <strong>%2$s</strong>.', 'zap-lite' );
+							$this->upgrader->strings['skin_update_failed']       = __( 'The installation of %1$s failed.', 'zap-lite' );
 
 							if ( $this->tgmpa->is_automatic ) {
 								// Automatic activation strings.
-								$this->upgrader->strings['skin_upgrade_start']        = __( 'The installation and activation process is starting. This process may take a while on some hosts, so please be patient.', 'zap' );
-								$this->upgrader->strings['skin_update_successful']    = __( '%1$s installed and activated successfully.', 'zap' ) . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'zap' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'zap' ) . '</span>.</a>';
-								$this->upgrader->strings['skin_upgrade_end']          = __( 'All installations and activations have been completed.', 'zap' );
-								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing and Activating Plugin %1$s (%2$d/%3$d)', 'zap' );
+								$this->upgrader->strings['skin_upgrade_start']        = __( 'The installation and activation process is starting. This process may take a while on some hosts, so please be patient.', 'zap-lite' );
+								$this->upgrader->strings['skin_update_successful']    = __( '%1$s installed and activated successfully.', 'zap-lite' ) . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'zap-lite' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'zap-lite' ) . '</span>.</a>';
+								$this->upgrader->strings['skin_upgrade_end']          = __( 'All installations and activations have been completed.', 'zap-lite' );
+								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing and Activating Plugin %1$s (%2$d/%3$d)', 'zap-lite' );
 							} else {
 								// Default installation strings.
-								$this->upgrader->strings['skin_upgrade_start']        = __( 'The installation process is starting. This process may take a while on some hosts, so please be patient.', 'zap' );
-								$this->upgrader->strings['skin_update_successful']    = esc_html__( '%1$s installed successfully.', 'zap' ) . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'zap' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'zap' ) . '</span>.</a>';
-								$this->upgrader->strings['skin_upgrade_end']          = __( 'All installations have been completed.', 'zap' );
-								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing Plugin %1$s (%2$d/%3$d)', 'zap' );
+								$this->upgrader->strings['skin_upgrade_start']        = __( 'The installation process is starting. This process may take a while on some hosts, so please be patient.', 'zap-lite' );
+								$this->upgrader->strings['skin_update_successful']    = esc_html__( '%1$s installed successfully.', 'zap-lite' ) . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'zap-lite' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'zap-lite' ) . '</span>.</a>';
+								$this->upgrader->strings['skin_upgrade_end']          = __( 'All installations have been completed.', 'zap-lite' );
+								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing Plugin %1$s (%2$d/%3$d)', 'zap-lite' );
 							}
 						}
 					}
@@ -3427,7 +3427,7 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 							echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
 							$update_actions['dashboard'] = sprintf(
 								esc_html( $this->tgmpa->strings['complete'] ),
-								'<a href="' . esc_url( self_admin_url() ) . '">' . esc_html__( 'Return to the Dashboard', 'zap' ) . '</a>'
+								'<a href="' . esc_url( self_admin_url() ) . '">' . esc_html__( 'Return to the Dashboard', 'zap-lite' ) . '</a>'
 							);
 						} else {
 							$update_actions['tgmpa_page'] = '<a href="' . esc_url( $this->tgmpa->get_tgmpa_url() ) . '" target="_parent">' . esc_html( $this->tgmpa->strings['return'] ) . '</a>';

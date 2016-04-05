@@ -14,11 +14,11 @@ get_header(); ?>
 		<div id="content" class="site-content" role="main">
 
 			<header class="page-header col-sm-6 col-md-6 col-lg-6">
-				<h1 class="page-title animated bounceIn"><?php _e( '404', 'zap' ); ?></h1>
+				<h1 class="page-title animated bounceIn"><?php _e( '404', 'zap-lite' ); ?></h1>
 			</header>
 
 			<div class="page-content col-sm-6 col-md-6 col-lg-6">
-				<p class="animated bounceIn"><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'zap' ); ?></p>
+				<p class="animated bounceIn"><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'zap-lite' ); ?></p>
 
 				<?php get_search_form(); ?>
 			</div><!-- .page-content -->

@@ -1,5 +1,14 @@
 Zap changelog
 
+= Version 1.6 =
+* Fixed plugin territory functions
+* Prefixed script enqueues/functions
+* Use post_class filter for post templates
+* Changed text domain to zap-lite
+* Removed some images
+* Removed social links from customizer
+* Moved featured content slider to customizer
+
 = Version 1.5 =
 * Removed taxonomy template
 * Improved archive page template

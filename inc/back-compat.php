@@ -38,7 +38,7 @@ add_action( 'after_switch_theme', 'zap_switch_theme' );
  * @return void
  */
 function zap_upgrade_notice() {
-	$message = sprintf( __( 'Zap 1.0 requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again.', 'zap' ), $GLOBALS['wp_version'] );
+	$message = sprintf( __( 'Zap 1.0 requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again.', 'zap-lite' ), $GLOBALS['wp_version'] );
 	printf( '<div class="error"><p>%s</p></div>', $message );
 }
 
@@ -50,7 +50,7 @@ function zap_upgrade_notice() {
  * @return void
  */
 function zap_customize() {
-	wp_die( sprintf( __( 'Zap 1.0 requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again.', 'zap' ), $GLOBALS['wp_version'] ), '', array(
+	wp_die( sprintf( __( 'Zap 1.0 requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again.', 'zap-lite' ), $GLOBALS['wp_version'] ), '', array(
 		'back_link' => true,
 	) );
 }
@@ -65,7 +65,7 @@ add_action( 'load-customize.php', 'zap_customize' );
  */
 function zap_preview() {
 	if ( isset( $_GET['preview'] ) ) {
-		wp_die( sprintf( __( 'Zap 1.0 requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again.', 'zap' ), $GLOBALS['wp_version'] ) );
+		wp_die( sprintf( __( 'Zap 1.0 requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again.', 'zap-lite' ), $GLOBALS['wp_version'] ) );
 	}
 }
 add_action( 'template_redirect', 'zap_preview' );

@@ -9,30 +9,27 @@
  * @since Zap 1.0
  */
 
-global $zap_article_width;
 if ( !is_single() ) {
-	$post_class = 'not-single-post';
 	$header_class = 'simple';
 } else {
-	$post_class = 'single-post';
 	$header_class = '';
 }
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class($zap_article_width.$post_class); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header <?php echo $header_class; ?>">
 		<?php
 			if ( !is_single() && ( is_home() || is_archive() || is_search() ) ) {
 				$img = wp_get_attachment_image_src( get_post_thumbnail_id(), 'zap-medium-thumbnail' );
 				echo '<div class="single-image-container">';
 				if ( !empty($img) ) {
-					echo '<img src="'.$img['0'].'" class="single-post-image" alt="'.__('Post with image', 'zap').'">';
+					echo '<img src="'.$img['0'].'" class="single-post-image" alt="'.__('Post with image', 'zap-lite').'">';
 				} else {
 					echo '<span class="post-no-image"></span>';
 				}
 				if ( function_exists('zap_single_social_icons') ) { zap_single_social_icons(); }
-				echo '<span class="single-post-date icon-clock">'.human_time_diff(get_the_time('U',get_the_ID()),current_time('timestamp')) .  ' '.__('ago', 'zap').'</span>';
+				echo '<span class="single-post-date icon-clock">'.human_time_diff(get_the_time('U',get_the_ID()),current_time('timestamp')) .  ' '.__('ago', 'zap-lite').'</span>';
 				echo '</div>';
 				the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
 				echo '</header><!-- .entry-header -->';
@@ -41,7 +38,7 @@ if ( !is_single() ) {
 				$img = wp_get_attachment_image_src( get_post_thumbnail_id(), 'zap-full-width' );
 				echo '<div class="single-post-image-container">';
 				if ( !empty($img) ) {
-					echo '<img src="'.$img['0'].'" class="single-post-image" alt="'.__('Post with image', 'zap').'">';
+					echo '<img src="'.$img['0'].'" class="single-post-image" alt="'.__('Post with image', 'zap-lite').'">';
 				}
 				echo '<div class="single-post-meta">';
 					zap_posted_on();
@@ -51,7 +48,7 @@ if ( !is_single() ) {
 					if( function_exists('the_views') ) {
 						echo '<span class="single-post-views icon-eye">'.do_shortcode('[views]').'</span>';
 					}
-					echo zap_like_button();
+					if ( function_exists('zap_like_button') ) { echo zap_like_button(); }
 				echo '</div>';
 				echo '</div>';
 			}
@@ -69,11 +66,11 @@ if ( !is_single() ) {
 		zap_comment_count(get_the_ID());
 		?>
 	</div><!-- .entry-meta -->
-	<a href="<?php the_permalink(); ?>" class="single-post-readmore"><?php _e('Read more..', 'zap'); ?></a>
+	<a href="<?php the_permalink(); ?>" class="single-post-readmore"><?php _e('Read more..', 'zap-lite'); ?></a>
 	<?php else : ?>
 	<div class="entry-content">
 		<div id="entry-content-wrapper">
-			<?php the_content( __( 'Continue reading', 'zap' ).' '.'<span class="meta-nav">&rarr;</span>' ); ?>
+			<?php the_content( __( 'Continue reading', 'zap-lite' ).' '.'<span class="meta-nav">&rarr;</span>' ); ?>
 			<div class="single-post-bottom-meta">
 			<?php
 				zap_tag_list();
@@ -87,7 +84,7 @@ if ( !is_single() ) {
 		</div>
 		<?php
 			wp_link_pages( array(
-				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'zap' ) . '</span>',
+				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'zap-lite' ) . '</span>',
 				'after'       => '<div class="clearfix"></div></div>',
 				'link_before' => '<span>',
 				'link_after'  => '</span>',
