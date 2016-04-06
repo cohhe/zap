@@ -428,8 +428,6 @@ function zap_scripts() {
 
 	wp_enqueue_script( 'jquery-ui-draggable' );
 
-	wp_enqueue_script('zap-googlemap', '//maps.googleapis.com/maps/api/js?sensor=false', array(), '3', false);
-
 	// Add html5
 	wp_enqueue_script( 'html5shiv', get_template_directory_uri() . '/js/html5.js' );
 	wp_script_add_data( 'html5shiv', 'conditional', 'lt IE 9' );
@@ -559,7 +557,8 @@ function zap_body_classes( $classes ) {
 	}
 
 	$featured_id = get_theme_mod('zap_sliderid', '');
-	if ( ( $featured_id == '' && is_front_page() ) || ( get_queried_object_id() == intval($featured_id) ) ) {
+	$featured_tag = get_theme_mod('zap_slidertag', '');
+	if ( $featured_tag != '' && ( ( $featured_id == '' && is_front_page() ) || ( get_queried_object_id() == intval($featured_id) ) ) ) {
 		$classes[] = 'zap-main-slider';
 	}
 
@@ -862,7 +861,7 @@ function zap_register_required_plugins() {
 			'name'     				=> 'Functionality for Zap theme', // The plugin name
 			'slug'     				=> 'functionality-for-zap-theme', // The plugin slug (typically the folder name)
 			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '1.2', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 				=> '1.2.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL

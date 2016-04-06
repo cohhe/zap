@@ -1,5 +1,10 @@
 Zap changelog
 
+= Version 1.7 =
+* Fixed menu covering the content
+* Fixed issue with too long theme name increasing the menu height
+* Moved google maps script
+
 = Version 1.6 =
 * Fixed plugin territory functions
 * Prefixed script enqueues/functions
