@@ -48,3 +48,6 @@ Source: http://bxslider.com/
 
 Used images in screenshot.png, licensed under CC0 Public Domain, free for commercial use / no attribution required
 https://www.pexels.com/photo/flight-mountains-sky-flying-6675/
+https://pixabay.com/en/norway-mountain-sky-blue-water-772991/
+https://pixabay.com/en/push-ups-exercise-fitness-workout-888024/
+https://pixabay.com/en/antler-antler-carrier-fallow-deer-899123/
