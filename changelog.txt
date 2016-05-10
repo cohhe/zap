@@ -1,5 +1,8 @@
 Zap changelog
 
+= Version 1.8.1 =
+* Added welcome screen
+
 = Version 1.7 =
 * Fixed menu covering the content
 * Fixed issue with too long theme name increasing the menu height

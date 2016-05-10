@@ -57,6 +57,8 @@ if ( ! function_exists( 'zap_setup' ) ) :
 	 */
 	function zap_setup() {
 
+		require_once(get_template_directory() . '/inc/admin/welcome-screen/welcome-screen.php');
+
 		/**
 		 * Required: include TGM.
 		 */
