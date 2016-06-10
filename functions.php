@@ -937,3 +937,41 @@ function zap_register_required_plugins() {
 	tgmpa( $plugins, $config );
 }
 add_action( 'tgmpa_register', 'zap_register_required_plugins' );
+
+function zap_admin_rating_notice() {
+	$user = wp_get_current_user();
+	?>
+	<div class="zap-rating-notice">
+		<span class="zap-notice-left">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/logo-square.png" alt="">
+		</span>
+		<div class="zap-notice-center">
+			<p>Hi there, <?php echo $user->data->display_name; ?>, we noticed that you've been using Zap Lite for a while now.</p>
+			<p>We spent many hours developing this free theme for you and we would appriciate if you supported us by rating it!</p>
+		</div>
+		<div class="zap-notice-right">
+			<a href="https://wordpress.org/support/view/theme-reviews/zap-lite?rate=5#postform" class="button button-primary button-large zap-rating-rate">Rate at WordPress</a>
+			<a href="javascript:void(0)" class="button button-large preview zap-rating-dismiss">No, thanks</a>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<?php
+}
+if ( get_option('zap_rating_notice') && get_option('zap_rating_notice') != 'hide' && time() - get_option('zap_rating_notice') > 432000 ) {
+	add_action( 'admin_notices', 'zap_admin_rating_notice' );
+}
+
+function zap_dismiss_rating_notice() {
+	update_option('zap_rating_notice', 'hide');
+
+	die(0);
+}
+add_action( 'wp_ajax_nopriv_zap_dismiss_notice', 'zap_dismiss_rating_notice' );
+add_action( 'wp_ajax_zap_dismiss_notice', 'zap_dismiss_rating_notice' );
+
+function zap_theme_activated() {
+	if ( !get_option('zap_rating_notice') ) {
+		update_option('zap_rating_notice', time());
+	}
+}
+add_action('after_switch_theme', 'zap_theme_activated');

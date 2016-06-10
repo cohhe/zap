@@ -14,4 +14,17 @@ jQuery( document ).ready( function( $ ) {
 			$(this).parent().parent().find('.rpp_expert-panel').hide();
 		}
 	});
+
+	jQuery(document).on('click', '.zap-rating-dismiss', function() {
+		jQuery.ajax({
+			type: 'POST',
+			url: ajaxurl,
+			data: { 
+				'action': 'zap_dismiss_notice'
+			},
+			success: function(data) {
+				jQuery('.zap-rating-notice').remove();
+			}
+		});
+	});
 });
