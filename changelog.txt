@@ -1,5 +1,8 @@
 Zap changelog
 
+= Version 1.9.3 =
+* Checked WordPress 4.8 compatibility
+
 = Version 1.9.1 =
 * Added welcome screen
 

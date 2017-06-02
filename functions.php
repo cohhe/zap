@@ -827,7 +827,7 @@ function zap_register_required_plugins() {
 			'name'     				=> 'Bootstrap 3 Shortcodes', // The plugin name
 			'slug'     				=> 'bootstrap-3-shortcodes', // The plugin slug (typically the folder name)
 			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '3.3.6', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 				=> '3.3.10', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -836,7 +836,7 @@ function zap_register_required_plugins() {
 			'name'     				=> 'Contact Form 7', // The plugin name
 			'slug'     				=> 'contact-form-7', // The plugin slug (typically the folder name)
 			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '4.3', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 				=> '4.8', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -845,7 +845,7 @@ function zap_register_required_plugins() {
 			'name'     				=> 'Easy Social Icons', // The plugin name
 			'slug'     				=> 'easy-social-icons', // The plugin slug (typically the folder name)
 			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '1.2.4.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 				=> '3.0.5', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -854,7 +854,7 @@ function zap_register_required_plugins() {
 			'name'     				=> 'Easy Testimonials', // The plugin name
 			'slug'     				=> 'easy-testimonials', // The plugin slug (typically the folder name)
 			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '1.31.11', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 				=> '2.3.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -863,7 +863,7 @@ function zap_register_required_plugins() {
 			'name'     				=> 'Functionality for Zap theme', // The plugin name
 			'slug'     				=> 'functionality-for-zap-theme', // The plugin slug (typically the folder name)
 			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '1.2.3', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 				=> '1.2.4', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -872,7 +872,7 @@ function zap_register_required_plugins() {
 			'name'     				=> 'Newsletter', // The plugin name
 			'slug'     				=> 'newsletter', // The plugin slug (typically the folder name)
 			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '3.9.6', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 				=> '4.9.7', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -881,7 +881,7 @@ function zap_register_required_plugins() {
 			'name'     				=> 'WP-PostViews', // The plugin name
 			'slug'     				=> 'wp-postviews', // The plugin slug (typically the folder name)
 			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '1.71', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 				=> '1.75', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
