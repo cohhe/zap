@@ -859,7 +859,7 @@ function zap_register_required_plugins() {
 			'name'     				=> 'Bootstrap 3 Shortcodes', // The plugin name
 			'slug'     				=> 'bootstrap-3-shortcodes', // The plugin slug (typically the folder name)
 			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '3.3.6', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 				=> '3.3.10', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -868,7 +868,7 @@ function zap_register_required_plugins() {
 			'name'     				=> 'Contact Form 7', // The plugin name
 			'slug'     				=> 'contact-form-7', // The plugin slug (typically the folder name)
 			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '4.3', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 				=> '4.8', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -877,7 +877,7 @@ function zap_register_required_plugins() {
 			'name'     				=> 'Easy Social Icons', // The plugin name
 			'slug'     				=> 'easy-social-icons', // The plugin slug (typically the folder name)
 			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '1.2.4.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 				=> '3.0.5', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -886,7 +886,7 @@ function zap_register_required_plugins() {
 			'name'     				=> 'Easy Testimonials', // The plugin name
 			'slug'     				=> 'easy-testimonials', // The plugin slug (typically the folder name)
 			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '1.31.11', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 				=> '2.3.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -895,16 +895,7 @@ function zap_register_required_plugins() {
 			'name'     				=> 'Functionality for Zap theme', // The plugin name
 			'slug'     				=> 'functionality-for-zap-theme', // The plugin slug (typically the folder name)
 			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '1.2.2', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
-			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
-			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
-			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
-		),
-		array(
-			'name'     				=> 'Like Dislike counter', // The plugin name
-			'slug'     				=> 'like-dislike-counter-for-posts-pages-and-comments', // The plugin slug (typically the folder name)
-			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '1.3.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 				=> '1.2.4', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -913,7 +904,7 @@ function zap_register_required_plugins() {
 			'name'     				=> 'Newsletter', // The plugin name
 			'slug'     				=> 'newsletter', // The plugin slug (typically the folder name)
 			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '3.9.6', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 				=> '4.9.7', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -922,7 +913,7 @@ function zap_register_required_plugins() {
 			'name'     				=> 'WP-PostViews', // The plugin name
 			'slug'     				=> 'wp-postviews', // The plugin slug (typically the folder name)
 			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '1.71', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 				=> '1.75', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
@@ -969,3 +960,41 @@ function zap_register_required_plugins() {
 	tgmpa( $plugins, $config );
 }
 add_action( 'tgmpa_register', 'zap_register_required_plugins' );
+
+function zap_admin_rating_notice() {
+	$user = wp_get_current_user();
+	?>
+	<div class="zap-rating-notice">
+		<span class="zap-notice-left">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/logo-square.png" alt="">
+		</span>
+		<div class="zap-notice-center">
+			<p>Hi there, <?php echo $user->data->display_name; ?>, we noticed that you've been using Zap Lite for a while now.</p>
+			<p>We spent many hours developing this free theme for you and we would appriciate if you supported us by rating it!</p>
+		</div>
+		<div class="zap-notice-right">
+			<a href="https://wordpress.org/support/view/theme-reviews/zap-lite?rate=5#postform" class="button button-primary button-large zap-rating-rate">Rate at WordPress</a>
+			<a href="javascript:void(0)" class="button button-large preview zap-rating-dismiss">No, thanks</a>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<?php
+}
+if ( get_option('zap_rating_notice') && get_option('zap_rating_notice') != 'hide' && time() - get_option('zap_rating_notice') > 432000 ) {
+	add_action( 'admin_notices', 'zap_admin_rating_notice' );
+}
+
+function zap_dismiss_rating_notice() {
+	update_option('zap_rating_notice', 'hide');
+
+	die(0);
+}
+add_action( 'wp_ajax_nopriv_zap_dismiss_notice', 'zap_dismiss_rating_notice' );
+add_action( 'wp_ajax_zap_dismiss_notice', 'zap_dismiss_rating_notice' );
+
+function zap_theme_activated() {
+	if ( !get_option('zap_rating_notice') ) {
+		update_option('zap_rating_notice', time());
+	}
+}
+add_action('after_switch_theme', 'zap_theme_activated');
