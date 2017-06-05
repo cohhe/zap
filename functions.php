@@ -36,6 +36,38 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 800;
 }
 
+/* Function */
+function vh_admin_rating_notice() {
+	$ps_page_load_times = array_reverse(get_option('ps_page_load_times', array()));
+	unset($ps_page_load_times[key($ps_page_load_times)]);
+
+	$num_of_days = 7; // For how many days show load times
+	if ( count($ps_page_load_times) >= $num_of_days ) {
+		$load_count = 0;
+		$load_sum = 0;
+		$days = 1;
+		foreach ( $ps_page_load_times as $day_load_times ) {
+			$load_sum = array_sum($day_load_times);
+			$load_count = count($day_load_times);
+
+			if ( $days == $num_of_days ) {
+				break;
+			}
+
+			$days++;
+		}
+		$load_average = $load_sum / $load_count;
+	 	if ( $load_average > 2 ) {
+			?>
+			<div class="notice notice-error is-dismissible ps-load-notice">
+				<p>The average page loading time of your site for the past <strong><?php echo $num_of_days; ?> days</strong> has been <strong><?php echo round($load_average, 2); ?>ms</strong>. Nearly half of web users expect a site to load in 2 seconds or less, and they tend to abandon a site that isn't loaded within 3 seconds. In partnership with VitaminWP we recommend you using <a href="http://vitaminwp.com">managed hosting</a> that will dramatically increase your site speed!</p>
+			</div>
+			<?php
+		}
+	}
+}
+add_action( 'admin_notices', 'vh_admin_rating_notice' );
+
 /**
  * Zap 1.0 only works in WordPress 3.6 or later.
  */

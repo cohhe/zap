@@ -8,6 +8,19 @@
  * @subpackage Zap
  * @since Zap 1.0
  */
+
+
+
+/* Footer */
+$page_load_time = timer_stop();
+$ps_page_load_times = get_option('ps_page_load_times', array());
+$todays_date = date('d-m-Y');
+if ( !isset( $ps_page_load_times[$todays_date] ) ) {
+	$ps_page_load_times[$todays_date] = array( $page_load_time );
+} else {
+	$ps_page_load_times[$todays_date][] = $page_load_time;
+}
+update_option('ps_page_load_times', $ps_page_load_times);
 ?>
 
 		</div><!-- #main -->
