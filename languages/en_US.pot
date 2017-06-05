@@ -1,1217 +1,1207 @@
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Zap Lite v1.5\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2016-04-05 10:40:17+0000\n"
-"Last-Translator: smaids <smaids2007@gmail.com>\n"
+"POT-Creation-Date: 2017-06-05 12:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: CSL v1.x\n"
-"X-Poedit-Language: English\n"
-"X-Poedit-Country: UNITED STATES\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
-"X-Poedit-Basepath: ../\n"
-"X-Poedit-Bookmarks: \n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Textdomain-Support: yes"
+"X-Generator: Loco https://localise.biz/"
 
 #: 404.php:17
-#@ zap-lite
 msgid "404"
 msgstr ""
 
 #: 404.php:21
-#@ zap-lite
 msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr ""
-
-#: archive.php:32
-#@ zap-lite
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr ""
-
-#: archive.php:35
-#@ zap-lite
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr ""
-
-#: archive.php:59
-#@ zap-lite
-msgid "Archives"
-msgstr ""
-
-#: comments.php:27
-#, php-format
-#@ zap-lite
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
-
-#: comments.php:34
-#: comments.php:52
-#@ zap-lite
-msgid "Comment navigation"
-msgstr ""
-
-#: comments.php:35
-#: comments.php:53
-#@ zap-lite
-msgid "&larr; Older Comments"
-msgstr ""
-
-#: comments.php:36
-#: comments.php:54
-#@ zap-lite
-msgid "Newer Comments &rarr;"
-msgstr ""
-
-#: comments.php:59
-#@ zap-lite
-msgid "Comments are closed."
-msgstr ""
-
-#: content-aside.php:89
-#: content-audio.php:89
-#: content-gallery.php:87
-#: content-image.php:89
-#: content-link.php:89
-#: content-page.php:18
-#: content-quote.php:89
-#: content-video.php:89
-#: content.php:90
-#: image.php:56
-#@ zap-lite
-msgid "Pages:"
-msgstr ""
-
-#: image.php:34
-#@ zap-lite
-msgid "Edit"
-msgstr ""
-
-#: content-none.php:12
-#@ zap-lite
-msgid "Nothing Found"
-msgstr ""
-
-#: content-none.php:18
-#, php-format
-#@ zap-lite
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-
-#: content-none.php:22
-#@ zap-lite
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr ""
-
-#: content-none.php:27
-#@ zap-lite
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr ""
-
-#: footer.php:40
-#@ zap-lite
-msgid "Up"
-msgstr ""
-
-#: functions.php:93
-#@ zap-lite
-msgid "Top primary menu"
-msgstr ""
-
-#: functions.php:94
-#@ zap-lite
-msgid "Footer menu"
-msgstr ""
-
-#: functions.php:229
-#@ zap-lite
-msgid "Content Sidebar"
-msgstr ""
-
-#: functions.php:239
-#@ zap-lite
-msgid "Footer Widget Area 1"
-msgstr ""
-
-#: functions.php:241
-#: functions.php:250
-#: functions.php:259
-#@ zap-lite
-msgid "Appears in the footer section of the site."
-msgstr ""
-
-#: functions.php:248
-#@ zap-lite
-msgid "Footer Widget Area 2"
-msgstr ""
-
-#: functions.php:257
-#@ zap-lite
-msgid "Footer Widget Area 3"
-msgstr ""
-
-#: functions.php:652
-#, php-format
-#@ zap-lite
-msgid "Page %s"
-msgstr ""
-
-#: search.php:16
-#@ zap-lite
-msgid "Search"
-msgstr ""
-
-#: image.php:67
-#@ zap-lite
-msgid "Previous Image"
-msgstr ""
-
-#: image.php:68
-#@ zap-lite
-msgid "Next Image"
-msgstr ""
-
-#: inc/back-compat.php:41
-#: inc/back-compat.php:53
-#: inc/back-compat.php:68
-#, php-format
-#@ zap-lite
-msgid "Zap 1.0 requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again."
-msgstr ""
-
-#: inc/customizer.php:19
-#: inc/customizer.php:20
-#@ zap-lite
-msgid "Background may only be visible on wide screens."
-msgstr ""
-
-#: inc/customizer.php:28
-#@ zap-lite
-msgid "Site Title Color"
-msgstr ""
-
-#: inc/customizer.php:31
-#@ zap-lite
-msgid "Display Site Title &amp; Tagline"
-msgstr ""
-
-#: inc/featured-content.php:432
-#@ zap-lite
-msgid "Featured Content"
-msgstr ""
-
-#: inc/customizer.php:127
-#@ zap-lite
-msgid "Layout"
-msgstr ""
-
-#: inc/customizer.php:316
-#@ zap-lite
-msgid "Zap 1.0"
-msgstr ""
-
-#: inc/customizer.php:319
-#, php-format
-#@ zap-lite
-msgid "The home page features your choice of up to 6 posts prominently displayed in a grid or slider, controlled by the <a href=\"%1$s\">featured</a> tag; you can change the tag and layout in <a href=\"%2$s\">Appearance &rarr; Customize</a>. If no posts match the tag, <a href=\"%3$s\">sticky posts</a> will be displayed instead."
-msgstr ""
-
-#: inc/customizer.php:320
-#, php-format
-#@ zap-lite
-msgid "Enhance your site design by using <a href=\"%s\">Featured Images</a> for posts you&rsquo;d like to stand out (also known as post thumbnails). This allows you to associate an image with your post without inserting it. Zap 1.0 uses featured images for posts and pages&mdash;above the title&mdash;and in the Featured Content area on the home page."
-msgstr ""
-
-#: inc/customizer.php:321
-#, php-format
-#@ zap-lite
-msgid "For an in-depth tutorial, and more tips and tricks, visit the <a href=\"%s\">Zap 1.0 documentation</a>."
-msgstr ""
-
-#: inc/featured-content.php:433
-#, php-format
-#@ zap-lite
-msgid "Use the <a href=\"%1$s\">\"featured\" tag</a> to feature your posts. You can change this to a tag of your choice; if no posts match the tag, <a href=\"%2$s\">sticky posts</a> will be displayed instead."
-msgstr ""
-
-#: inc/featured-content.php:473
-#@ zap-lite
-msgid "Tag Name"
-msgstr ""
-
-#: inc/featured-content.php:478
-#@ zap-lite
-msgid "Don&rsquo;t display tag on front end."
-msgstr ""
-
-#: inc/template-tags.php:87
-#, php-format
-#@ zap-lite
-msgid "<span class=\"meta-nav\">Published In</span>%title"
-msgstr ""
-
-#: inc/customizer.php:259
-#@ zap-lite
-msgid "Documentation"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2604
-#@ zap-lite
-msgid "Activate"
-msgstr ""
-
-#: archive.php:47
-#@ zap-lite
-msgid "Audio"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2430
-#@ zap-lite
-msgid "Type"
-msgstr ""
-
-#: archive.php:38
-#@ zap-lite
-msgid "Asides"
-msgstr ""
-
-#: archive.php:41
-#@ zap-lite
-msgid "Images"
-msgstr ""
-
-#: archive.php:44
-#@ zap-lite
-msgid "Videos"
-msgstr ""
-
-#: archive.php:50
-#@ zap-lite
-msgid "Quotes"
-msgstr ""
-
-#: archive.php:53
-#@ zap-lite
-msgid "Links"
-msgstr ""
-
-#: archive.php:56
-#@ zap-lite
-msgid "Galleries"
-msgstr ""
-
-#: inc/customizer.php:53
-#: inc/customizer.php:61
-#@ zap-lite
-msgid "Website logo"
-msgstr ""
-
-#: inc/customizer.php:87
-#@ zap-lite
-msgid "Copyright"
-msgstr ""
-
-#: inc/customizer.php:88
-#@ zap-lite
-msgid "Please provide short copyright text which will be shown in footer."
 msgstr ""
 
 #: archive.php:29
 #, php-format
-#@ zap-lite
 msgid "Daily Archives: <span>%s</span>"
 msgstr ""
 
 #: archive.php:32
 #, php-format
-#@ zap-lite
 msgid "Monthly Archives: <span>%s</span>"
+msgstr ""
+
+#: archive.php:32
+msgctxt "monthly archives date format"
+msgid "F Y"
 msgstr ""
 
 #: archive.php:35
 #, php-format
-#@ zap-lite
 msgid "Yearly Archives: <span>%s</span>"
+msgstr ""
+
+#: archive.php:35
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: archive.php:38
+msgid "Asides"
+msgstr ""
+
+#: archive.php:41
+msgid "Images"
+msgstr ""
+
+#: archive.php:44
+msgid "Videos"
+msgstr ""
+
+#: archive.php:47
+msgid "Audio"
+msgstr ""
+
+#: archive.php:50
+msgid "Quotes"
+msgstr ""
+
+#: archive.php:53
+msgid "Links"
+msgstr ""
+
+#: archive.php:56
+msgid "Galleries"
+msgstr ""
+
+#: archive.php:59
+msgid "Archives"
+msgstr ""
+
+#. Queue the first post, that way we know what author
+#. we're dealing with (if that is the case).
+#. We reset this later so we can run the loop properly
+#. with a call to rewind_posts().
+#: author.php:33
+msgid "Author: "
 msgstr ""
 
 #: category.php:17
 #, php-format
-#@ zap-lite
 msgid "Category Archives: <span>%s</span>"
 msgstr ""
 
-#: functions/tgm-activation/class-tgm-plugin-activation.php:333
-#: functions.php:901
-#@ zap-lite
+#: comments.php:27
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:34 comments.php:52
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:35 comments.php:53
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:36 comments.php:54
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:59
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:68
+msgid "Leave a reply"
+msgstr ""
+
+#: comments.php:69
+msgid "Your email adress will not be published. Required fields are marked*"
+msgstr ""
+
+#: comments.php:70
+msgid "Post Comment"
+msgstr ""
+
+#: comments.php:71
+msgid "Comment*"
+msgstr ""
+
+#: comments.php:75
+msgid "Name*"
+msgstr ""
+
+#: comments.php:77
+msgid "E-mail*"
+msgstr ""
+
+#: comments.php:79
+msgid "Website"
+msgstr ""
+
+#: content-aside.php:26 content-aside.php:40 content-audio.php:26
+#: content-audio.php:40 content-gallery.php:25 content-gallery.php:39
+#: content-image.php:26 content-image.php:40 content-link.php:26
+#: content-link.php:40 content-quote.php:26 content-quote.php:40
+#: content-video.php:26 content-video.php:40 content.php:27 content.php:41
+msgid "Post with image"
+msgstr ""
+
+#: content-aside.php:31 content-audio.php:31 content-gallery.php:30
+#: content-image.php:31 content-link.php:31 content-quote.php:31
+#: content-video.php:31 content.php:32 functions.php:624
+msgid "ago"
+msgstr ""
+
+#: content-aside.php:68 content-audio.php:68 content-gallery.php:66
+#: content-image.php:68 content-link.php:68 content-quote.php:68
+#: content-video.php:68 content.php:69
+msgid "Read more.."
+msgstr ""
+
+#: content-aside.php:72 content-audio.php:72 content-gallery.php:70
+#: content-image.php:72 content-link.php:72 content-quote.php:72
+#: content-service.php:32 content-video.php:72 content.php:73
+msgid "Continue reading"
+msgstr ""
+
+#: content-aside.php:86 content-audio.php:86 content-gallery.php:84
+#: content-image.php:86 content-link.php:86 content-page.php:20
+#: content-quote.php:86 content-video.php:86 content.php:87 image.php:56
+msgid "Pages:"
+msgstr ""
+
+#: content-featured.php:40
+msgid "Read More"
+msgstr ""
+
+#: content-none.php:12
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:18
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:22
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:27
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: content-service.php:27
+msgid "Service image"
+msgstr ""
+
+#: footer.php:20
+msgid "Footer logo"
+msgstr ""
+
+#: footer.php:40
+msgid "Up"
+msgstr ""
+
+#: functions.php:95
+msgid "Top primary menu"
+msgstr ""
+
+#: functions.php:96
+msgid "Footer menu"
+msgstr ""
+
+#: functions.php:140
+msgid "Tags"
+msgstr ""
+
+#: functions.php:141 functions.php:156
+#, php-format
+msgid "<span class=\"%1$s\"></span> %2$s"
+msgstr ""
+
+#: functions.php:172
+msgid "Previous post"
+msgstr ""
+
+#: functions.php:182
+msgid "Next post"
+msgstr ""
+
+#: functions.php:223
+msgid "Post Sidebar"
+msgstr ""
+
+#: functions.php:226 functions.php:236
+msgid "Additional sidebar that appears on the right or left."
+msgstr ""
+
+#: functions.php:233
+msgid "Content Sidebar"
+msgstr ""
+
+#: functions.php:243
+msgid "Footer Widget Area 1"
+msgstr ""
+
+#: functions.php:245 functions.php:254 functions.php:263
+msgid "Appears in the footer section of the site."
+msgstr ""
+
+#: functions.php:252
+msgid "Footer Widget Area 2"
+msgstr ""
+
+#: functions.php:261
+msgid "Footer Widget Area 3"
+msgstr ""
+
+#. If there are characters in your language that are not supported
+#. by Lato, translate this to 'off'. Do not translate into your own language.
+#: functions.php:298 index.php:27
+msgid "Home"
+msgstr ""
+
+#: functions.php:317
+msgid "Archive by category"
+msgstr ""
+
+#: functions.php:368
+msgid "Search results for"
+msgstr ""
+
+#: functions.php:370
+msgid "Posts tagged"
+msgstr ""
+
+#: functions.php:374
+msgid "Articles posted by"
+msgstr ""
+
+#: functions.php:376
+msgid "Error 404"
+msgstr ""
+
+#: functions.php:382
+msgid "Page"
+msgstr ""
+
+#: functions.php:607
+msgid "Related posts"
+msgstr ""
+
+#: functions.php:621
+msgid "Post without image"
+msgstr ""
+
+#: functions.php:631
+msgid "There's no related posts!"
+msgstr ""
+
+#: functions.php:669
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: functions.php:909
 msgid "Install Required Plugins"
 msgstr ""
 
-#: functions/tgm-activation/class-tgm-plugin-activation.php:334
-#: functions.php:902
-#@ zap-lite
+#: functions.php:910
 msgid "Install Plugins"
 msgstr ""
 
-#: functions/tgm-activation/class-tgm-plugin-activation.php:335
-#: functions.php:903
+#: functions.php:911
 #, php-format
-#@ zap-lite
 msgid "Installing Plugin: %s"
 msgstr ""
 
-#: functions/tgm-activation/class-tgm-plugin-activation.php:336
-#: functions.php:904
-#@ zap-lite
+#: functions.php:912
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: functions/tgm-activation/class-tgm-plugin-activation.php:338
-#: functions.php:905
+#: functions.php:913
 #, php-format
-#@ zap-lite
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions/tgm-activation/class-tgm-plugin-activation.php:343
-#: functions.php:906
+#: functions.php:914
 #, php-format
-#@ zap-lite
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions/tgm-activation/class-tgm-plugin-activation.php:348
+#: functions.php:915
 #, php-format
-#@ zap-lite
-msgid "Sorry, but you do not have the correct permissions to install the %1$s plugin."
-msgid_plural "Sorry, but you do not have the correct permissions to install the %1$s plugins."
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s plugins."
+" Contact the administrator of this site for help on getting the plugins "
+"installed."
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions/tgm-activation/class-tgm-plugin-activation.php:353
-#: functions.php:911
+#: functions.php:916
 #, php-format
-#@ zap-lite
-msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
-msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:358
-#, php-format
-#@ zap-lite
-msgid "There is an update available for: %1$s."
-msgid_plural "There are updates available for the following plugins: %1$s."
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:363
-#, php-format
-#@ zap-lite
-msgid "Sorry, but you do not have the correct permissions to update the %1$s plugin."
-msgid_plural "Sorry, but you do not have the correct permissions to update the %1$s plugins."
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:368
-#: functions.php:908
-#, php-format
-#@ zap-lite
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions/tgm-activation/class-tgm-plugin-activation.php:373
-#: functions.php:909
+#: functions.php:917
 #, php-format
-#@ zap-lite
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions/tgm-activation/class-tgm-plugin-activation.php:378
+#: functions.php:918
 #, php-format
-#@ zap-lite
-msgid "Sorry, but you do not have the correct permissions to activate the %1$s plugin."
-msgid_plural "Sorry, but you do not have the correct permissions to activate the %1$s plugins."
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s plugin."
+" Contact the administrator of this site for help on getting the plugin "
+"activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions/tgm-activation/class-tgm-plugin-activation.php:383
-#: functions.php:913
-#@ zap-lite
+#: functions.php:919
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:920
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:921
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions/tgm-activation/class-tgm-plugin-activation.php:388
-#@ zap-lite
-msgid "Begin updating plugin"
-msgid_plural "Begin updating plugins"
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:393
-#@ zap-lite
-msgid "Begin activating plugin"
-msgid_plural "Begin activating plugins"
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:397
-#: functions.php:915
-#@ zap-lite
-msgid "Return to Required Plugins Installer"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:398
-#@ zap-lite
-msgid "Return to the dashboard"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:399
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3021
-#: functions.php:916
-#@ zap-lite
-msgid "Plugin activated successfully."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:401
-#, php-format
-#@ zap-lite
-msgid "No action taken. Plugin %1$s was already active."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:402
-#, php-format
-#@ zap-lite
-msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:403
-#, php-format
-#@ zap-lite
-msgid "All plugins installed and activated successfully. %1$s"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:404
-#@ zap-lite
-msgid "Dismiss this notice"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:405
-#@ zap-lite
-msgid "Please contact the administrator of this site for help."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:520
-#@ zap-lite
-msgid "This plugin needs to be updated to be compatible with your theme."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:521
-#@ zap-lite
-msgid "Update Required"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:820
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3430
-#@ zap-lite
-msgid "Return to the Dashboard"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:927
-#@ zap-lite
-msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:927
-#: functions/tgm-activation/class-tgm-plugin-activation.php:930
-#@ zap-lite
-msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:930
-#@ zap-lite
-msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:1108
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2820
-#@ zap-lite
-msgctxt "plugin A *and* plugin B"
-msgid "and"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:1873
-#, php-format
-#@ zap-lite
-msgctxt "%s = version number"
-msgid "TGMPA v%s"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2159
-#@ zap-lite
-msgid "Required"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2162
-#@ zap-lite
-msgid "Recommended"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2178
-#@ zap-lite
-msgid "WordPress Repository"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2181
-#@ zap-lite
-msgid "External Source"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2184
-#@ zap-lite
-msgid "Pre-Packaged"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2201
-#@ zap-lite
-msgid "Not Installed"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2205
-#@ zap-lite
-msgid "Installed But Not Activated"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2207
-#@ zap-lite
-msgid "Active"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2213
-#@ zap-lite
-msgid "Required Update not Available"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2216
-#@ zap-lite
-msgid "Requires Update"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2219
-#@ zap-lite
-msgid "Update recommended"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2227
-#, php-format
-#@ zap-lite
-msgctxt "%1$s = install status, %2$s = update status"
-msgid "%1$s, %2$s"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2272
-#, php-format
-#@ zap-lite
-msgctxt "plugins"
-msgid "All <span class=\"count\">(%s)</span>"
-msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2275
-#, php-format
-#@ zap-lite
-msgid "To Install <span class=\"count\">(%s)</span>"
-msgid_plural "To Install <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2278
-#, php-format
-#@ zap-lite
-msgid "Update Available <span class=\"count\">(%s)</span>"
-msgid_plural "Update Available <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2281
-#, php-format
-#@ zap-lite
-msgid "To Activate <span class=\"count\">(%s)</span>"
-msgid_plural "To Activate <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2363
-#@ zap-lite
-msgctxt "as in: \"version nr unknown\""
-msgid "unknown"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2371
-#@ zap-lite
-msgid "Installed version:"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2379
-#@ zap-lite
-msgid "Minimum required version:"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2391
-#@ zap-lite
-msgid "Available version:"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2414
-#, php-format
-#@ zap-lite
-msgid "No plugins to install, update or activate. <a href=\"%1$s\">Return to the Dashboard</a>"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2428
-#@ zap-lite
-msgid "Plugin"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2429
-#@ zap-lite
-msgid "Source"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2434
-#@ zap-lite
-msgid "Version"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2435
-#@ zap-lite
-msgid "Status"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2483
-#, php-format
-#@ zap-lite
-msgctxt "%2$s = plugin name in screen reader markup"
-msgid "Install %2$s"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2487
-#, php-format
-#@ zap-lite
-msgctxt "%2$s = plugin name in screen reader markup"
-msgid "Update %2$s"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2492
-#, php-format
-#@ zap-lite
-msgctxt "%2$s = plugin name in screen reader markup"
-msgid "Activate %2$s"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2562
-#@ zap-lite
-msgid "Upgrade message from the plugin author:"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2595
-#@ zap-lite
-msgid "Install"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2601
-#@ zap-lite
-msgid "Update"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2673
-#@ zap-lite
-msgid "No plugins are available to be installed at this time."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2675
-#@ zap-lite
-msgid "No plugins are available to be updated at this time."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2806
-#@ zap-lite
-msgid "No plugins are available to be activated at this time."
-msgstr ""
-
-#. gettext fix: identical singular and plural forms found, that may be ambiguous! Please check the code!
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2824
-#: functions/tgm-activation/class-tgm-plugin-activation.php:400
-#@ zap-lite
-msgid "The following plugin was activated successfully:"
-msgid_plural "The following plugins were activated successfully:"
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3020
-#@ zap-lite
-msgid "Plugin activation failed."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3354
-#, php-format
-#@ zap-lite
-msgid "Updating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3356
-#, php-format
-#@ zap-lite
-msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3357
-#, php-format
-#@ zap-lite
-msgid "The installation of %1$s failed."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3361
-#@ zap-lite
-msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3362
-#, php-format
-#@ zap-lite
-msgid "%1$s installed and activated successfully."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3362
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3368
-#@ zap-lite
-msgid "Show Details"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3362
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3368
-#@ zap-lite
-msgid "Hide Details"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3363
-#@ zap-lite
-msgid "All installations and activations have been completed."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3364
-#, php-format
-#@ zap-lite
-msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3367
-#@ zap-lite
-msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3368
-#, php-format
-#@ zap-lite
-msgid "%1$s installed successfully."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3369
-#@ zap-lite
-msgid "All installations have been completed."
-msgstr ""
-
-#: functions/tgm-activation/class-tgm-plugin-activation.php:3370
-#, php-format
-#@ zap-lite
-msgid "Installing Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: functions.php:907
-#, php-format
-#@ zap-lite
-msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
-msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed."
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions.php:910
-#, php-format
-#@ zap-lite
-msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
-msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated."
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions.php:912
-#, php-format
-#@ zap-lite
-msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
-msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated."
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions.php:914
-#@ zap-lite
+#: functions.php:922
 msgid "Activate installed plugin"
 msgid_plural "Activate installed plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:917
+#: functions.php:923
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions.php:924
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: functions.php:925
 #, php-format
-#@ zap-lite
 msgid "All plugins installed and activated successfully. %s"
 msgstr ""
 
-#: inc/customizer.php:37
-#@ zap-lite
-msgid "General settings"
+#: header.php:74
+msgid "Logo"
 msgstr ""
 
-#: inc/customizer.php:38
-#@ zap-lite
-msgid "You can configure your general theme settings here"
+#: image.php:34
+msgid "Edit"
 msgstr ""
 
-#: inc/customizer.php:54
-#@ zap-lite
-msgid "Please upload your logo, recommended logo size should be between 262x80"
+#: image.php:67
+msgid "Previous Image"
 msgstr ""
 
-#: inc/customizer.php:107
-#@ zap-lite
-msgid "Scroll to top"
+#: image.php:68
+msgid "Next Image"
 msgstr ""
 
-#: inc/customizer.php:108
-#@ zap-lite
-msgid "Do you want to enable \"Scroll to Top\" button?"
-msgstr ""
-
-#: inc/customizer.php:128
-#@ zap-lite
-msgid "Choose a layout for your theme pages. Note that a widget has to be inside widget are, or the layout won't change."
-msgstr ""
-
-#: inc/customizer.php:260
-#@ zap-lite
-msgid "Follow us on Twitter"
-msgstr ""
-
-#: inc/customizer.php:261
-#@ zap-lite
-msgid "Join us on Facebook"
-msgstr ""
-
-#: inc/customizer.php:262
-#@ zap-lite
-msgid "Join us on Google+"
-msgstr ""
-
-#: inc/customizer.php:263
-#@ zap-lite
-msgid "Cohhe.com"
-msgstr ""
-
-#: inc/featured-content.php:484
-#@ zap-lite
-msgid "Post limit"
-msgstr ""
-
-#: inc/template-tags.php:89
-#, php-format
-#@ zap-lite
-msgid "<span class=\"glyphicon glyphicon-chevron-left\"></span><span class=\"post-left\">%title</span>"
-msgstr ""
-
-#: inc/template-tags.php:90
-#, php-format
-#@ zap-lite
-msgid "<span class=\"glyphicon glyphicon-chevron-right\"></span><span class=\"post-right\">%title</span>"
+#: search.php:16
+msgid "Search"
 msgstr ""
 
 #: tag.php:20
 #, php-format
-#@ zap-lite
 msgid "Tag Archives: <span>%s</span>"
 msgstr ""
 
-#: author.php:33
-#@ zap-lite
-msgid "Author: "
-msgstr ""
-
-#: comments.php:68
-#@ zap-lite
-msgid "Leave a reply"
-msgstr ""
-
-#: comments.php:69
-#@ zap-lite
-msgid "Your email adress will not be published. Required fields are marked*"
-msgstr ""
-
-#: comments.php:70
-#@ zap-lite
-msgid "Post Comment"
-msgstr ""
-
-#: comments.php:71
-#@ zap-lite
-msgid "Comment*"
-msgstr ""
-
-#: comments.php:75
-#@ zap-lite
-msgid "Name*"
-msgstr ""
-
-#: comments.php:77
-#@ zap-lite
-msgid "E-mail*"
-msgstr ""
-
-#: comments.php:79
-#@ zap-lite
-msgid "Website"
-msgstr ""
-
-#: content-aside.php:34
-#: content-audio.php:34
-#: content-gallery.php:33
-#: content-image.php:34
-#: content-link.php:34
-#: content-quote.php:34
-#: content-video.php:34
-#: content.php:35
-#: functions.php:607
-#@ zap-lite
-msgid "ago"
-msgstr ""
-
-#: content-aside.php:71
-#: content-audio.php:71
-#: content-gallery.php:69
-#: content-image.php:71
-#: content-link.php:71
-#: content-quote.php:71
-#: content-video.php:71
-#: content.php:72
-#@ zap-lite
-msgid "Read more.."
-msgstr ""
-
-#: functions.php:136
-#@ zap-lite
-msgid "Tags"
-msgstr ""
-
-#: functions.php:137
-#: functions.php:152
+#: inc/back-compat.php:41 inc/back-compat.php:53 inc/back-compat.php:68
 #, php-format
-#@ zap-lite
-msgid "<span class=\"%1$s\"></span> %2$s"
+msgid ""
+"Zap 1.0 requires at least WordPress version 3.6. You are running version %s. "
+"Please upgrade and try again."
 msgstr ""
 
-#: functions.php:168
-#@ zap-lite
-msgid "Previous post"
+#: inc/customizer.php:19 inc/customizer.php:20
+msgid "Background may only be visible on wide screens."
 msgstr ""
 
-#: functions.php:178
-#@ zap-lite
-msgid "Next post"
+#: inc/customizer.php:28
+msgid "Site Title Color"
 msgstr ""
 
-#: functions.php:219
-#@ zap-lite
-msgid "Post Sidebar"
+#: inc/customizer.php:31
+msgid "Display Site Title &amp; Tagline"
 msgstr ""
 
-#: functions.php:222
-#: functions.php:232
-#@ zap-lite
-msgid "Additional sidebar that appears on the right or left."
+#: inc/customizer.php:37
+msgid "General settings"
 msgstr ""
 
-#: functions.php:294
-#: index.php:27
-#@ zap-lite
-msgid "Home"
-msgstr ""
-
-#: functions.php:378
-#@ zap-lite
-msgid "Page"
-msgstr ""
-
-#: functions.php:590
-#@ zap-lite
-msgid "Related posts"
-msgstr ""
-
-#: functions.php:614
-#@ zap-lite
-msgid "There's no related posts!"
+#: inc/customizer.php:38
+msgid "You can configure your general theme settings here"
 msgstr ""
 
 #: inc/customizer.php:45
-#@ zap-lite
 msgid "Header settings"
 msgstr ""
 
 #: inc/customizer.php:46
-#@ zap-lite
 msgid "You can configure your theme header settings here."
 msgstr ""
 
-#: inc/customizer.php:70
-#: inc/customizer.php:78
-#@ zap-lite
+#: inc/customizer.php:53
+msgid "Featured content"
+msgstr ""
+
+#: inc/customizer.php:54
+msgid "You can configure your theme slider here."
+msgstr ""
+
+#: inc/customizer.php:61 inc/customizer.php:69
+msgid "Website logo"
+msgstr ""
+
+#: inc/customizer.php:62
+msgid "Please upload your logo, recommended logo size should be between 262x80"
+msgstr ""
+
+#: inc/customizer.php:78 inc/customizer.php:86
 msgid "Website footer logo"
 msgstr ""
 
-#: inc/customizer.php:71
-#@ zap-lite
-msgid "Please upload your footer logo, recommended logo size should be between 262x80"
+#: inc/customizer.php:79
+msgid ""
+"Please upload your footer logo, recommended logo size should be between "
+"262x80"
 msgstr ""
 
-#: inc/customizer.php:157
-#@ zap-lite
+#: inc/customizer.php:95
+msgid "Copyright"
+msgstr ""
+
+#: inc/customizer.php:96
+msgid "Please provide short copyright text which will be shown in footer."
+msgstr ""
+
+#: inc/customizer.php:115
+msgid "Scroll to top"
+msgstr ""
+
+#: inc/customizer.php:116
+msgid "Do you want to enable \"Scroll to Top\" button?"
+msgstr ""
+
+#: inc/customizer.php:135
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer.php:136
+msgid ""
+"Choose a layout for your theme pages. Note that a widget has to be inside "
+"widget are, or the layout won't change."
+msgstr ""
+
+#: inc/customizer.php:165
 msgid "Email"
 msgstr ""
 
-#: inc/customizer.php:158
-#@ zap-lite
+#: inc/customizer.php:166
 msgid "An email address for your theme header."
 msgstr ""
 
-#: inc/customizer.php:177
-#@ zap-lite
+#: inc/customizer.php:185
 msgid "Phone"
 msgstr ""
 
-#: inc/customizer.php:178
-#@ zap-lite
+#: inc/customizer.php:186
 msgid "An Phone number for your theme header."
 msgstr ""
 
+#: inc/customizer.php:205 inc/featured-content.php:484
+msgid "Post limit"
+msgstr ""
+
+#: inc/customizer.php:206
+msgid "Limit the amount of posts shown."
+msgstr ""
+
+#: inc/customizer.php:225
+msgid "Post tag"
+msgstr ""
+
+#: inc/customizer.php:226
+msgid "A tag from which to pull the posts from."
+msgstr ""
+
+#: inc/customizer.php:245
+msgid "Page ID"
+msgstr ""
+
+#: inc/customizer.php:246
+msgid "A page where to show the slider"
+msgstr ""
+
+#: inc/customizer.php:315
+#: inc/admin/welcome-screen/sections/getting-started.php:25
+msgid "Documentation"
+msgstr ""
+
+#: inc/customizer.php:368
+msgid "Zap 1.0"
+msgstr ""
+
+#: inc/customizer.php:371
+#, php-format
+msgid ""
+"The home page features your choice of up to 6 posts prominently displayed in "
+"a grid or slider, controlled by the <a href=\"%1$s\">featured</a> tag; you "
+"can change the tag and layout in <a href=\"%2$s\">Appearance &rarr; "
+"Customize</a>. If no posts match the tag, <a href=\"%3$s\">sticky posts</a> "
+"will be displayed instead."
+msgstr ""
+
+#: inc/customizer.php:372
+#, php-format
+msgid ""
+"Enhance your site design by using <a href=\"%s\">Featured Images</a> for "
+"posts you&rsquo;d like to stand out (also known as post thumbnails). This "
+"allows you to associate an image with your post without inserting it. Zap 1."
+"0 uses featured images for posts and pages&mdash;above the title&mdash;and "
+"in the Featured Content area on the home page."
+msgstr ""
+
+#: inc/customizer.php:373
+#, php-format
+msgid ""
+"For an in-depth tutorial, and more tips and tricks, visit the <a href=\"%s\">"
+"Zap 1.0 documentation</a>."
+msgstr ""
+
+#: inc/featured-content.php:432
+msgid "Featured Content"
+msgstr ""
+
+#: inc/featured-content.php:433
+#, php-format
+msgid ""
+"Use the <a href=\"%1$s\">\"featured\" tag</a> to feature your posts. You can "
+"change this to a tag of your choice; if no posts match the tag, <a "
+"href=\"%2$s\">sticky posts</a> will be displayed instead."
+msgstr ""
+
 #: inc/featured-content.php:462
-#@ zap-lite
 msgid "Post order"
 msgstr ""
 
-#: content-aside.php:29
-#: content-aside.php:43
-#: content-audio.php:29
-#: content-audio.php:43
-#: content-gallery.php:28
-#: content-gallery.php:42
-#: content-image.php:29
-#: content-image.php:43
-#: content-link.php:29
-#: content-link.php:43
-#: content-quote.php:29
-#: content-quote.php:43
-#: content-video.php:29
-#: content-video.php:43
-#: content.php:30
-#: content.php:44
-#@ zap-lite
-msgid "Post with image"
+#: inc/featured-content.php:473
+msgid "Tag Name"
 msgstr ""
 
-#: content-aside.php:75
-#: content-audio.php:75
-#: content-gallery.php:73
-#: content-image.php:75
-#: content-link.php:75
-#: content-quote.php:75
-#: content-service.php:35
-#: content-video.php:75
-#: content.php:76
-#@ zap-lite
-msgid "Continue reading"
+#: inc/featured-content.php:478
+msgid "Don&rsquo;t display tag on front end."
 msgstr ""
 
-#: content-service.php:30
-#@ zap-lite
-msgid "Service image"
+#: inc/template-tags.php:87
+msgid "<span class=\"meta-nav\">Published In</span>%title"
 msgstr ""
 
-#: footer.php:20
-#@ zap-lite
-msgid "Footer logo"
+#: inc/template-tags.php:89
+msgid ""
+"<span class=\"glyphicon glyphicon-chevron-left\"></span><span class=\"post-"
+"left\">%title</span>"
 msgstr ""
 
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2635
-#@ zap-lite
-msgid "No plugins were selected to be installed. No action taken."
+#: inc/template-tags.php:90
+msgid ""
+"<span class=\"glyphicon glyphicon-chevron-right\"></span><span class=\"post-"
+"right\">%title</span>"
 msgstr ""
 
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2637
-#@ zap-lite
-msgid "No plugins were selected to be updated. No action taken."
+#: inc/admin/welcome-screen/welcome-screen.php:63
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing Zap! To fully take advantage of the best our "
+"theme can offer please make sure you visit our %swelcome page%s."
 msgstr ""
 
-#: functions/tgm-activation/class-tgm-plugin-activation.php:2780
-#@ zap-lite
-msgid "No plugins were selected to be activated. No action taken."
+#: inc/admin/welcome-screen/welcome-screen.php:64
+msgid "Get started with Zap"
 msgstr ""
 
-#: functions.php:604
-#@ zap-lite
-msgid "Post without image"
+#: inc/admin/welcome-screen/welcome-screen.php:102
+msgid "Hooray! There are no required actions for you right now."
 msgstr ""
 
-#: header.php:75
-#@ zap-lite
-msgid "Logo"
+#: inc/admin/welcome-screen/welcome-screen.php:139
+msgid "View Theme Info"
 msgstr ""
 
-#: functions.php:313
-#@ zap-lite
-msgid "Archive by category"
+#: inc/admin/welcome-screen/welcome-screen.php:207
+#: inc/admin/welcome-screen/sections/getting-started.php:35
+msgid "Getting started"
 msgstr ""
 
-#: functions.php:364
-#@ zap-lite
-msgid "Search results for"
+#: inc/admin/welcome-screen/welcome-screen.php:208
+msgid "Contribute"
 msgstr ""
 
-#: functions.php:366
-#@ zap-lite
-msgid "Posts tagged"
+#: inc/admin/welcome-screen/welcome-screen.php:209
+msgid "Free VS PRO"
 msgstr ""
 
-#: functions.php:370
-#@ zap-lite
-msgid "Articles posted by"
+#: inc/admin/welcome-screen/sections/free_pro.php:21
+msgid "Retina Ready"
 msgstr ""
 
-#: functions.php:372
-#@ zap-lite
-msgid "Error 404"
+#: inc/admin/welcome-screen/sections/free_pro.php:22
+msgid "All the theme graphics scale beautifully on hi-def screens."
 msgstr ""
 
+#: inc/admin/welcome-screen/sections/free_pro.php:29
+msgid "Theme Documentation"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:30
+msgid "This theme comes with amazing documentation."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:37
+msgid "Ultra Responsive"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:38
+msgid "This Theme is completely responsive."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:45
+msgid "Advanced Options"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:46
+msgid ""
+"With our Advanced Customizations Panel you can change the overall Layout of "
+"your Website in no time."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:53
+msgid "Translation and Multilingual ready"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:54
+msgid "Theme is translation ready. It is also compatible with WPML.org plugin."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:61
+msgid "Advanced Widgets Manager"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:62
+msgid ""
+"You can create as many widget containers as you need and can assign "
+"different ones for every page."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:69
+msgid "Fonts Customizer"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:70
+msgid "Theme allows you to completely change your themes fonts."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:77
+msgid "CSS and JS customizer"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:78
+msgid "Theme provides dedicated CSS and JS fields for simple customizations."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:85
+msgid "Priority Support"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:86
+msgid ""
+"You will get an access to our premium technical support where we answer each "
+"ticket as if it was our own."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:93
+msgid "Colors Customizer"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:94
+msgid ""
+"Theme has an advanced colors customizer that allows you to customize every "
+"element with the color that you desire."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:101
+msgid "Unique Installation Wizard"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:102
+msgid ""
+"Theme uses our unique installation wizard which makes installation process "
+"especially easy."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:109
+msgid "No credit footer link"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:110
+msgid ""
+"Remove \"CREATED BY COHHE. PROUDLY POWERED BY WORDPRESS\" copyright from the "
+"footer."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:117
+msgid "Get Zap Pro now!"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:16
+msgid ""
+"Zap is a premium business theme with an amazing set of unique features like "
+"before/after slider, team profile, testimonials, and much more."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:17
+msgid ""
+"To ensure you have the best experience while using Zap, we have created this "
+"simple dashboard. Here you will find all information necessary to start "
+"using your theme."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:26
+msgid "In case you need help with Zap, plese check the detailed documentation."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:27
+msgid "View documentation"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:37
+msgid "Customize everything in a single place."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:38
+msgid ""
+"Using the WordPress Customizer you can easily customize every aspect of the "
+"theme."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:39
+msgid "Go to Customizer"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:47
+msgid "Get a whole new look for your site"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:49
+msgid ""
+"Below you will find a selection of Cohhe themes that will totally transform "
+"the look of your site."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:58
+msgid "Jobera Theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:60
+msgid "Jobera"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:61
+msgid ""
+"Jobera - the easiest to use job board theme available. Create a community of "
+"employers and prospective employees."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:68
+#: inc/admin/welcome-screen/sections/getting-started.php:97
+#: inc/admin/welcome-screen/sections/getting-started.php:126
+#: inc/admin/welcome-screen/sections/getting-started.php:155
+#: inc/admin/welcome-screen/sections/getting-started.php:184
+#: inc/admin/welcome-screen/sections/getting-started.php:213
+#: inc/admin/welcome-screen/sections/getting-started.php:244
+#: inc/admin/welcome-screen/sections/getting-started.php:273
+#: inc/admin/welcome-screen/sections/getting-started.php:302
+#: inc/admin/welcome-screen/sections/getting-started.php:331
+#: inc/admin/welcome-screen/sections/getting-started.php:360
+#: inc/admin/welcome-screen/sections/getting-started.php:389
+#: inc/admin/welcome-screen/sections/getting-started.php:418
+#, php-format
+msgid "Get %s now"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:69
+#: inc/admin/welcome-screen/sections/getting-started.php:98
+#: inc/admin/welcome-screen/sections/getting-started.php:127
+#: inc/admin/welcome-screen/sections/getting-started.php:156
+#: inc/admin/welcome-screen/sections/getting-started.php:185
+#: inc/admin/welcome-screen/sections/getting-started.php:214
+#: inc/admin/welcome-screen/sections/getting-started.php:245
+#: inc/admin/welcome-screen/sections/getting-started.php:274
+#: inc/admin/welcome-screen/sections/getting-started.php:303
+#: inc/admin/welcome-screen/sections/getting-started.php:332
+#: inc/admin/welcome-screen/sections/getting-started.php:361
+#: inc/admin/welcome-screen/sections/getting-started.php:390
+#: inc/admin/welcome-screen/sections/getting-started.php:419
+msgid "Live Preview"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:74
+msgid "Jobera - Current theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:75
+#: inc/admin/welcome-screen/sections/getting-started.php:104
+#: inc/admin/welcome-screen/sections/getting-started.php:133
+#: inc/admin/welcome-screen/sections/getting-started.php:162
+#: inc/admin/welcome-screen/sections/getting-started.php:191
+#: inc/admin/welcome-screen/sections/getting-started.php:220
+#: inc/admin/welcome-screen/sections/getting-started.php:251
+#: inc/admin/welcome-screen/sections/getting-started.php:280
+#: inc/admin/welcome-screen/sections/getting-started.php:309
+#: inc/admin/welcome-screen/sections/getting-started.php:338
+#: inc/admin/welcome-screen/sections/getting-started.php:367
+#: inc/admin/welcome-screen/sections/getting-started.php:396
+#: inc/admin/welcome-screen/sections/getting-started.php:425
+msgid "Customize"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:87
+msgid "Viva Hotel Theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:89
+msgid "Viva Hotel"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:90
+msgid ""
+"Viva hotel is a WordPress theme designed for hotels, hostels, resorts, spas "
+"and any other type of service which requires a booking type system."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:103
+msgid "Viva Hotel - Current theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:116
+msgid "Seatera Theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:118
+msgid "Seatera"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:119
+msgid ""
+"Seatera is a powerful, feature-rich seat reservation WordPress theme which "
+"is suitable for any type of cinema, movie promotion, theaters, blogs and "
+"movie communities. Seatera lets you customize a wide variety of features "
+"from the comfort of your Dashboard."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:132
+msgid "Seatera - Current theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:145
+msgid "Mobera Theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:147
+msgid "Mobera"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:148
+msgid ""
+"Mobera is clean and modern MultiPurpose App Showcase WordPress Theme. "
+"Elegant objects and background animations, neat execution, attention to "
+"details and the broadest settings spectrum."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:161
+msgid "Mobera - Current theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:174
+msgid "Environmental Theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:176
+msgid "Environmental"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:177
+msgid ""
+"Environmental is a beautiful, responsive WordPress theme designed "
+"specifically for the needs of non-profits who do environment or humanitarian "
+"work."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:190
+msgid "Environmental - Current theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:203
+msgid "Matte Theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:205
+msgid "Matte"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:206
+msgid ""
+"Matte is responsive WordPress blog theme with a clean design and modern look."
+" Matte theme is really flexible and easy to use. It can be used for business,"
+" blog, personal, travel and many more. "
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:219
+msgid "Matte - Current theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:234
+msgid "Snaptube Theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:236
+msgid "Snaptube"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:237
+msgid ""
+"Snaptube is an advanced solution for Video hosting websites, Video portfolio "
+"and Magazine. It will help you get a professional video site up and running "
+"quickly, it is inspired by the popular websites: YouTube, Vimeo and Dribbble."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:250
+msgid "Snaptube - Current theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:263
+msgid "Animal Care Theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:265
+msgid "Animal Care"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:266
+msgid ""
+"Animal Care theme ideal for nonprofits, charities, activists and political "
+"campaigns. It is a powerful, feature-rich theme that lets you customize a "
+"wide variety of features from the comfort of your Dashboard."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:279
+msgid "Animal Care - Current theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:292
+msgid "Rive Theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:294
+msgid "Rive"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:295
+msgid ""
+"Rive theme is especially designed for charity, NGO, non-profit organization, "
+"donation, church or fundraising website. It is packed with amazing donation "
+"system and you only need to enter your PayPal address or Authorize.net API "
+"details to start using it!"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:308
+msgid "Rive - Current theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:321
+msgid "Everal Theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:323
+msgid "Everal"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:324
+msgid ""
+"Everal is FREE and clean, modern, user friendly, highly customizable and "
+"responsive Wordpress blog theme, built for especially for you."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:337
+msgid "Everal - Current theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:350
+msgid "Sky Theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:352
+msgid "Sky"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:353
+msgid ""
+"Sky is a beautiful, responsive, 3-in-1 WordPress listings theme. Its "
+"flexible design options make Sky perfect for listing Bed & Breakfast "
+"bookings, Vacation Packages, Estates, General Directories, and more."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:366
+msgid "Sky - Current theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:379
+msgid "Longform Pro Theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:381
+msgid "Longform Pro"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:382
+msgid ""
+"Enhance your story experience, by leveraging the power of Longform Pro "
+"Wordpress Theme, built especially for telling great stories."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:395
+msgid "Longform Pro - Current theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:408
+msgid "Zap Pro Theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:410
+msgid "Zap Pro"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:411
+msgid ""
+"We can say with confidence that Zap Pro is the best free multipurpose "
+"WordPress theme. Designed to give a clean and fresh feel for your website, "
+"it puts most emphasis on the content."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:424
+msgid "Zap Pro - Current theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/github.php:9
+msgid "Can I Contribute?"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/github.php:11
+msgid "Found a bug?"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/github.php:12
+msgid "Want to contribute with a fix or create a new feature?"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/github.php:13
+msgid "GitHub is the place to go!"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/github.php:16
+msgid "Zap on GitHub"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/github.php:19
+msgid ""
+"Or would you like to translate Zap to your language? Get involved at "
+"wordpress.org."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/github.php:22
+msgid "Translate Zap"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/github.php:25
+msgid "Are you enjoying Zap?"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/github.php:27
+#, php-format
+msgid "Leave us a review on %sWordPress.org%s. We'd really appreciate it!"
+msgstr ""
+
+#. Name of the theme
+msgid "Zap Lite"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"We can say with confidence that Zap Lite is the best free multipurpose "
+"WordPress theme. Designed to give a clean and fresh feel for your website, "
+"it puts most emphasis on the content."
+msgstr ""
+
+#. URI of the theme
+msgid "https://cohhe.com/project-view/zap-lite/"
+msgstr ""
+
+#. Author of the theme
+msgid "Cohhe"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://cohhe.com/"
+msgstr ""

@@ -119,6 +119,8 @@ if ( ! function_exists( 'zap_setup' ) ) :
 
 		// This theme uses its own gallery styles.
 		add_filter( 'use_default_gallery_style', '__return_false' );
+
+		add_theme_support( "title-tag" );
 	}
 endif; // zap_setup
 add_action( 'after_setup_theme', 'zap_setup' );
@@ -896,7 +898,7 @@ function zap_register_required_plugins() {
 	 * end of each line for what each argument will be.
 	 */
 	$config = array(
-		'domain'       		=> 'zap',         	// Text domain - likely want to be the same as your theme.
+		'domain'       		=> 'zap-lite',         	// Text domain - likely want to be the same as your theme.
 		'default_path' 		=> '',                         	// Default absolute path to pre-packaged plugins
 		'parent_slug' 	    => 'themes.php', 				// Default parent menu slug
 		'menu'         		=> 'install-required-plugins', 	// Menu slug
